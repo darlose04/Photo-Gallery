@@ -6,11 +6,11 @@ const Header = () => {
     <Navbar bg='dark' variant='dark'>
       <Navbar.Brand href='#home'>Logan Wilson Photography</Navbar.Brand>
       <Nav className='mr-auto'>
-        <Nav.Link>Home</Nav.Link>
-        <Nav.Link>Portfolio</Nav.Link>
-        <Nav.Link>Prints</Nav.Link>
-        <Nav.Link>About</Nav.Link>
-        <Nav.Link>Contact</Nav.Link>
+        <Nav.Link href='/'>Home</Nav.Link>
+        <Nav.Link href='/portfolio'>Portfolio</Nav.Link>
+        <Nav.Link href='/prints'>Prints</Nav.Link>
+        <Nav.Link href='/about'>About</Nav.Link>
+        <Nav.Link href='/contact'>Contact</Nav.Link>
       </Nav>
       <Nav className='ml-auto'>
         <Nav.Link href='https://www.instagram.com/loganwilsonphotography/'>
