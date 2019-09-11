@@ -1,9 +1,11 @@
 import React from "react";
+import Image from "react-bootstrap/Image";
+import westimage from "../LoganPhotos/TheWindowToTheWest.jpg";
 
 const Home = () => {
   return (
-    <div>
-      <h1>This is the home page</h1>
+    <div className='container'>
+      <Image src={westimage} fluid />
     </div>
   );
 };
