@@ -9,7 +9,7 @@ const AllPictures = ({ allPictures }) => {
     return (key = picture.name);
   });
   return (
-    <div className='mt-2'>
+    <div className='mt-2 mb-3'>
       <Gallery key={key} photos={allPictures} />
     </div>
   );
