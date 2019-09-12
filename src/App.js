@@ -34,6 +34,10 @@ import upsidedown from "./LoganPhotos/TheUpsideDown.jpg";
 
 const App = () => {
   // const [pictures, setPictures] = useState([]);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const landscapeImages = [
     {
@@ -273,7 +277,7 @@ const App = () => {
   return (
     <Router>
       <div className='App'>
-        <Header />
+        <Header show={show} handleClose={handleClose} handleShow={handleShow} />
         <div className='container'>
           <Switch>
             <Route exact path='/' component={Home} />
