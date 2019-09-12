@@ -5,7 +5,7 @@ const LandscapePicture = ({ landscapeImages }) => {
   return (
     <div className='container'>
       <div className='row'>
-        <div className='col-md-4'>
+        <div className='col-md-4 d-flex align-items-stretch'>
           {/* {pictures.map(picture => (
             <div key={picture.name} className='card mb-3'>
               <img src={picture.url} alt='things' />
@@ -27,7 +27,7 @@ const LandscapePicture = ({ landscapeImages }) => {
             </div>
           </div>
         </div>
-        <div className='col-md-4'>
+        <div className='col-md-4 d-flex align-items-stretch'>
           <div key={landscapeImages[1].name} className='card mb-3'>
             <img
               className='img-thumbnail'
@@ -40,7 +40,7 @@ const LandscapePicture = ({ landscapeImages }) => {
             </div>
           </div>
         </div>
-        <div className='col-md-4'>
+        <div className='col-md-4 d-flex align-items-stretch'>
           <div key={landscapeImages[2].name} className='card mb-3'>
             <img
               className='img-thumbnail'
@@ -55,7 +55,7 @@ const LandscapePicture = ({ landscapeImages }) => {
         </div>
       </div>
       <div className='row'>
-        <div className='col-md-4'>
+        <div className='col-md-4 d-flex align-items-stretch'>
           <div key={landscapeImages[3].name} className='card mb-3'>
             <img
               className='img-thumbnail'
@@ -68,7 +68,7 @@ const LandscapePicture = ({ landscapeImages }) => {
             </div>
           </div>
         </div>
-        <div className='col-md-4'>
+        <div className='col-md-4 d-flex align-items-stretch'>
           <div key={landscapeImages[4].name} className='card mb-3'>
             <img
               className='img-thumbnail'
@@ -81,7 +81,7 @@ const LandscapePicture = ({ landscapeImages }) => {
             </div>
           </div>
         </div>
-        <div className='col-md-4'>
+        <div className='col-md-4 d-flex align-items-stretch'>
           <div key={landscapeImages[5].name} className='card mb-3'>
             <img
               className='img-thumbnail'
