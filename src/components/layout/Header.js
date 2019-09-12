@@ -17,6 +17,7 @@ const Header = () => {
               <NavDropdown.Item href='/prints/portrait'>
                 Portrait
               </NavDropdown.Item>
+              <NavDropdown.Item href='/prints/all'>All Photos</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href='/about'>About</Nav.Link>
             <Nav.Link href='/contact'>Contact</Nav.Link>
