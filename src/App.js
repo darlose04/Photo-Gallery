@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 import Landscape from "./components/photopages/Landscape";
 import Portrait from "./components/photopages/Portrait";
 
-// image imports
+// landscape image imports
 import cottoncandy from "./LoganPhotos/CottonCandySunrise.jpg";
 import railroad from "./LoganPhotos/DesertedRailroad.jpg";
 import grandspring from "./LoganPhotos/GrandPrismaticSpring.jpg";
@@ -16,10 +16,18 @@ import loneeagle from "./LoganPhotos/LoneEagleSunset.jpg";
 import giantshoulders from "./LoganPhotos/OntheShouldersofGiants.jpg";
 import reflections from "./LoganPhotos/Reflections.jpg";
 
+// portrait image imports
+import waterfalls from "./LoganPhotos/ChasingWaterfalls.jpg";
+import eyetoeye from "./LoganPhotos/EyeToEye.jpg";
+import lastlight from "./LoganPhotos/LastLight.jpg";
+import snakeriver from "./LoganPhotos/SnakeRiverOverlook.jpg";
+import archway from "./LoganPhotos/TheArchwayToTheWest.jpg";
+import upsidedown from "./LoganPhotos/TheUpsideDown.jpg";
+
 const App = () => {
   // const [pictures, setPictures] = useState([]);
 
-  const pictures = [
+  const landscapeImages = [
     {
       name: "Cotton Candy Sunrise",
       url: cottoncandy,
@@ -58,6 +66,45 @@ const App = () => {
     }
   ];
 
+  const portraitImages = [
+    {
+      name: "Chasing Waterfalls",
+      url: waterfalls,
+      orientation: "portrait",
+      price: "$25.00"
+    },
+    {
+      name: "Eye to Eye",
+      url: eyetoeye,
+      orientation: "portrait",
+      price: "$25.00"
+    },
+    {
+      name: "Last Light",
+      url: lastlight,
+      orientation: "portrait",
+      price: "$25.00"
+    },
+    {
+      name: "Snake River Overlook",
+      url: snakeriver,
+      orientation: "portrait",
+      price: "$25.00"
+    },
+    {
+      name: "The Archway to the West",
+      url: archway,
+      orientation: "portrait",
+      price: "$25.00"
+    },
+    {
+      name: "The Upside Down",
+      url: upsidedown,
+      orientation: "portrait",
+      price: "$25.00"
+    }
+  ];
+
   return (
     <Router>
       <div className='App'>
@@ -68,9 +115,13 @@ const App = () => {
             <Route
               exact
               path='/prints/landscape'
-              render={props => <Landscape pictures={pictures} />}
+              render={props => <Landscape landscapeImages={landscapeImages} />}
             />
-            <Route exact path='/prints/portrait' component={Portrait} />
+            <Route
+              exact
+              path='/prints/portrait'
+              render={props => <Portrait portraitImages={portraitImages} />}
+            />
             <Route exact path='/about' component={About} />
             <Route exact path='/contact' component={Contact} />
           </Switch>
