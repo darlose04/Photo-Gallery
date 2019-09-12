@@ -4,7 +4,7 @@ const PortraitPicture = ({ portraitImages }) => {
   // console.log(pictures);
 
   return (
-    <div className='container'>
+    <div className='container mb-5'>
       <div className='row'>
         <div className='col-md-4 d-flex align-items-stretch'>
           {/* {pictures.map(picture => (
