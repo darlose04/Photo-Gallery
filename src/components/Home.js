@@ -4,7 +4,7 @@ import westimage from "../LoganPhotos/TheWindowToTheWest.jpg";
 
 const Home = () => {
   return (
-    <div className='container'>
+    <div className='container mt-3'>
       <Image src={westimage} fluid />
     </div>
   );
