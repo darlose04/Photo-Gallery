@@ -135,7 +135,7 @@ const App = () => {
       src: snakeriver,
       orientation: "portrait",
       price: "$25.00",
-      width: 2,
+      width: 3,
       height: 4
     },
     {
@@ -175,7 +175,7 @@ const App = () => {
       src: waterfalls,
       orientation: "portrait",
       price: "$25.00",
-      width: 2,
+      width: 3,
       height: 4
     },
 
@@ -184,7 +184,7 @@ const App = () => {
       src: lastlight,
       orientation: "portrait",
       price: "$25.00",
-      width: 2,
+      width: 3,
       height: 4
     },
 
@@ -201,7 +201,7 @@ const App = () => {
       src: archway,
       orientation: "portrait",
       price: "$25.00",
-      width: 2,
+      width: 3,
       height: 4
     },
     {
@@ -217,7 +217,7 @@ const App = () => {
       src: eyetoeye,
       orientation: "portrait",
       price: "$25.00",
-      width: 2,
+      width: 3,
       height: 4
     },
     {
@@ -233,7 +233,7 @@ const App = () => {
       src: upsidedown,
       orientation: "portrait",
       price: "$25.00",
-      width: 2,
+      width: 3,
       height: 4
     },
     {
