@@ -116,117 +116,157 @@ const App = () => {
   const allPictures = [
     {
       name: "Cotton Candy Sunrise",
-      url: cottoncandy,
+      src: cottoncandy,
       orientation: "landscape",
-      price: "$25.00"
+      price: "$25.00",
+      width: 4,
+      height: 3
     },
     {
       name: "Deserted Railroad",
-      url: railroad,
+      src: railroad,
       orientation: "landscape",
-      price: "$25.00"
-    },
-    {
-      name: "Grand Prismatic Spring",
-      url: grandspring,
-      orientation: "landscape",
-      price: "$25.00"
-    },
-    {
-      name: "Lone Eagle Sunset",
-      url: loneeagle,
-      orientation: "landscape",
-      price: "$25.00"
-    },
-    {
-      name: "On the Shoulders of Giants",
-      url: giantshoulders,
-      orientation: "landscape",
-      price: "$25.00"
-    },
-    {
-      name: "Reflections",
-      url: reflections,
-      orientation: "landscape",
-      price: "$25.00"
-    },
-    {
-      name: "Chasing Waterfalls",
-      url: waterfalls,
-      orientation: "portrait",
-      price: "$25.00"
-    },
-    {
-      name: "Eye to Eye",
-      url: eyetoeye,
-      orientation: "portrait",
-      price: "$25.00"
-    },
-    {
-      name: "Last Light",
-      url: lastlight,
-      orientation: "portrait",
-      price: "$25.00"
+      price: "$25.00",
+      width: 4,
+      height: 3
     },
     {
       name: "Snake River Overlook",
-      url: snakeriver,
+      src: snakeriver,
       orientation: "portrait",
-      price: "$25.00"
+      price: "$25.00",
+      width: 2,
+      height: 4
+    },
+    {
+      name: "Grand Prismatic Spring",
+      src: grandspring,
+      orientation: "landscape",
+      price: "$25.00",
+      width: 4,
+      height: 3
+    },
+    {
+      name: "Lone Eagle Sunset",
+      src: loneeagle,
+      orientation: "landscape",
+      price: "$25.00",
+      width: 4,
+      height: 3
+    },
+    {
+      name: "On the Shoulders of Giants",
+      src: giantshoulders,
+      orientation: "landscape",
+      price: "$25.00",
+      width: 4,
+      height: 3
+    },
+    {
+      name: "Reflections",
+      src: reflections,
+      orientation: "landscape",
+      price: "$25.00",
+      width: 4,
+      height: 3
+    },
+    {
+      name: "Chasing Waterfalls",
+      src: waterfalls,
+      orientation: "portrait",
+      price: "$25.00",
+      width: 2,
+      height: 4
+    },
+
+    {
+      name: "Last Light",
+      src: lastlight,
+      orientation: "portrait",
+      price: "$25.00",
+      width: 2,
+      height: 4
+    },
+
+    {
+      name: "Rustic Barn",
+      src: rustic,
+      orientation: "landscape",
+      price: "$25.00",
+      width: 4,
+      height: 3
     },
     {
       name: "The Archway to the West",
-      url: archway,
+      src: archway,
       orientation: "portrait",
-      price: "$25.00"
-    },
-    {
-      name: "The Upside Down",
-      url: upsidedown,
-      orientation: "portrait",
-      price: "$25.00"
-    },
-    {
-      name: "Rustic Barn",
-      url: rustic,
-      orientation: "landscape",
-      price: "$25.00"
+      price: "$25.00",
+      width: 2,
+      height: 4
     },
     {
       name: "Schwabacher Sunrise",
-      url: schwabacher,
+      src: schwabacher,
       orientation: "landscape",
-      price: "$25.00"
+      price: "$25.00",
+      width: 4,
+      height: 3
+    },
+    {
+      name: "Eye to Eye",
+      src: eyetoeye,
+      orientation: "portrait",
+      price: "$25.00",
+      width: 2,
+      height: 4
     },
     {
       name: "Switzerland of America",
-      url: swissamerica,
+      src: swissamerica,
       orientation: "landscape",
-      price: "$25.00"
+      price: "$25.00",
+      width: 4,
+      height: 3
+    },
+    {
+      name: "The Upside Down",
+      src: upsidedown,
+      orientation: "portrait",
+      price: "$25.00",
+      width: 2,
+      height: 4
     },
     {
       name: "Teton Sunrise",
-      url: teton,
+      src: teton,
       orientation: "landscape",
-      price: "$25.00"
+      price: "$25.00",
+      width: 4,
+      height: 3
     },
     {
       name: "The Hazy Bells",
-      url: hazybells,
+      src: hazybells,
       orientation: "landscape",
-      price: "$25.00"
+      price: "$25.00",
+      width: 4,
+      height: 3
     },
     {
       name: "The Majestics Flatirons",
-      url: flatirons,
+      src: flatirons,
       orientation: "landscape",
-      price: "$25.00"
+      price: "$25.00",
+      width: 4,
+      height: 3
     },
     {
       name: "The Window to the West",
-      url: windowwest,
+      src: windowwest,
       orientation: "landscape",
-      price: "$25.00"
+      price: "$25.00",
+      width: 4,
+      height: 3
     }
   ];
 
