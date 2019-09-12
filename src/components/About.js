@@ -11,11 +11,15 @@ const About = () => {
       <div className='card' style={cardStyle}>
         <div className='row no-gutters'>
           <div className='col-md-6'>
-            <img className='img-thumbnail mt-3' src={headshot} alt='headshot' />
+            <img
+              className='img-thumbnail mt-4 ml-2'
+              src={headshot}
+              alt='headshot'
+            />
           </div>
           <div className='col-md-6'>
             <div className='card-body'>
-              <h4 className='card-title'>About Logan</h4>
+              <h2 className='card-title'>About Logan</h2>
               <p className='card-text'>
                 My name is Logan Wilson and I am just a twenty-something trying
                 to turn my hobby of photography into something more. I have my
