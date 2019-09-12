@@ -4,7 +4,7 @@ import Contact from "../Contact";
 
 const Header = ({ show, handleClose, handleShow }) => {
   return (
-    <Navbar bg='dark' variant='dark' expand='md'>
+    <Navbar sticky='top' bg='dark' variant='dark' expand='md'>
       <div className='container'>
         <Navbar.Brand href='/'>Logan Wilson Photography</Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
