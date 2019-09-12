@@ -1,7 +1,8 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import Contact from "../Contact";
 
-const Header = () => {
+const Header = ({ show, handleClose, handleShow }) => {
   return (
     <Navbar bg='dark' variant='dark' expand='md'>
       <div className='container'>
@@ -20,7 +21,10 @@ const Header = () => {
               <NavDropdown.Item href='/prints/all'>All Photos</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href='/about'>About</Nav.Link>
-            <Nav.Link href='/contact'>Contact</Nav.Link>
+            <Nav.Link href='#'>
+              <Nav.Item onClick={handleShow}>Contact</Nav.Item>
+              <Contact show={show} handleClose={handleClose} />
+            </Nav.Link>
           </Nav>
           <Nav className='ml-auto'>
             <Nav.Link href='https://www.instagram.com/loganwilsonphotography/'>
