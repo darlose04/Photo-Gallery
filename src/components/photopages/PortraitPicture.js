@@ -2,10 +2,11 @@ import React from "react";
 
 const PortraitPicture = ({ portraitImages }) => {
   // console.log(pictures);
+
   return (
     <div className='container'>
       <div className='row'>
-        <div className='col-md-4'>
+        <div className='col-md-4 d-flex align-items-stretch'>
           {/* {pictures.map(picture => (
             <div key={picture.name} className='card mb-3'>
               <img src={picture.url} alt='things' />
@@ -27,7 +28,7 @@ const PortraitPicture = ({ portraitImages }) => {
             </div>
           </div>
         </div>
-        <div className='col-md-4'>
+        <div className='col-md-4 d-flex align-items-stretch'>
           <div key={portraitImages[1].name} className='card mb-3'>
             <img
               className='img-thumbnail'
@@ -40,7 +41,7 @@ const PortraitPicture = ({ portraitImages }) => {
             </div>
           </div>
         </div>
-        <div className='col-md-4'>
+        <div className='col-md-4 d-flex align-items-stretch'>
           <div key={portraitImages[2].name} className='card mb-3'>
             <img
               className='img-thumbnail'
@@ -55,7 +56,7 @@ const PortraitPicture = ({ portraitImages }) => {
         </div>
       </div>
       <div className='row'>
-        <div className='col-md-4'>
+        <div className='col-md-4 d-flex align-items-stretch'>
           <div key={portraitImages[3].name} className='card mb-3'>
             <img
               className='img-thumbnail'
@@ -68,7 +69,7 @@ const PortraitPicture = ({ portraitImages }) => {
             </div>
           </div>
         </div>
-        <div className='col-md-4'>
+        <div className='col-md-4 d-flex align-items-stretch'>
           <div key={portraitImages[4].name} className='card mb-3'>
             <img
               className='img-thumbnail'
@@ -81,7 +82,7 @@ const PortraitPicture = ({ portraitImages }) => {
             </div>
           </div>
         </div>
-        <div className='col-md-4'>
+        <div className='col-md-4 d-flex align-items-stretch'>
           <div key={portraitImages[5].name} className='card mb-3'>
             <img
               className='img-thumbnail'
