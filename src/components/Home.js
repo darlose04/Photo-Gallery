@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
-import westimage from "../LoganPhotos/TheWindowToTheWest.jpg";
+import "../styles/Home.css";
 
 const Home = () => {
   return (
