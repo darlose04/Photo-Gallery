@@ -4,8 +4,14 @@ import westimage from "../LoganPhotos/TheWindowToTheWest.jpg";
 
 const Home = () => {
   return (
-    <div className='container mt-3'>
-      <Image src={westimage} fluid />
+    <div>
+      {/* <Image src={westimage} fluid /> */}
+      <ul className='slideshow'>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
   );
 };
