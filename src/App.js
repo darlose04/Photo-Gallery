@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from "./components/layout/Header";
@@ -34,50 +34,50 @@ import archway from "./LoganPhotos/TheArchwayToTheWest.jpg";
 import upsidedown from "./LoganPhotos/TheUpsideDown.jpg";
 
 const App = () => {
-  // const [pictures, setPictures] = useState([]);
+  const [pictures, setPictures] = useState([]);
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const landscapeImages = [
-    {
-      name: "Cotton Candy Sunrise",
-      url: cottoncandy,
-      orientation: "landscape",
-      price: "$25.00"
-    },
-    {
-      name: "Deserted Railroad",
-      url: railroad,
-      orientation: "landscape",
-      price: "$25.00"
-    },
-    {
-      name: "Grand Prismatic Spring",
-      url: grandspring,
-      orientation: "landscape",
-      price: "$25.00"
-    },
-    {
-      name: "Lone Eagle Sunset",
-      url: loneeagle,
-      orientation: "landscape",
-      price: "$25.00"
-    },
-    {
-      name: "On the Shoulders of Giants",
-      url: giantshoulders,
-      orientation: "landscape",
-      price: "$25.00"
-    },
-    {
-      name: "Reflections",
-      url: reflections,
-      orientation: "landscape",
-      price: "$25.00"
-    }
-  ];
+  // const landscapeImages = [
+  //   {
+  //     name: "Cotton Candy Sunrise",
+  //     url: cottoncandy,
+  //     orientation: "landscape",
+  //     price: "$25.00"
+  //   },
+  //   {
+  //     name: "Deserted Railroad",
+  //     url: railroad,
+  //     orientation: "landscape",
+  //     price: "$25.00"
+  //   },
+  //   {
+  //     name: "Grand Prismatic Spring",
+  //     url: grandspring,
+  //     orientation: "landscape",
+  //     price: "$25.00"
+  //   },
+  //   {
+  //     name: "Lone Eagle Sunset",
+  //     url: loneeagle,
+  //     orientation: "landscape",
+  //     price: "$25.00"
+  //   },
+  //   {
+  //     name: "On the Shoulders of Giants",
+  //     url: giantshoulders,
+  //     orientation: "landscape",
+  //     price: "$25.00"
+  //   },
+  //   {
+  //     name: "Reflections",
+  //     url: reflections,
+  //     orientation: "landscape",
+  //     price: "$25.00"
+  //   }
+  // ];
 
   const portraitImages = [
     {
@@ -285,7 +285,7 @@ const App = () => {
             <Route
               exact
               path='/prints/landscape'
-              render={props => <Landscape landscapeImages={landscapeImages} />}
+              render={props => <Landscape />}
             />
             <Route
               exact
