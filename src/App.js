@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
 
 import Header from "./components/layout/Header";
-import Footer from "./components/layout/Footer";
+// import Footer from "./components/layout/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -301,7 +302,7 @@ const App = () => {
             <Route exact path='/contact' component={Contact} />
           </Switch>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
