@@ -52,6 +52,32 @@ body {
   animation-delay: 40s;
 }
 
+@media screen and (max-width: 500px) {
+  .slideshow li:nth-child(1) {
+    background-image: url("../LoganPhotos/ChasingWaterfalls.jpg");
+  }
+
+  .slideshow li:nth-child(2) {
+    background-image: url("../LoganPhotos/EyeToEye.jpg");
+    animation-delay: 10s;
+  }
+
+  .slideshow li:nth-child(3) {
+    background-image: url("../LoganPhotos/LastLight.jpg");
+    animation-delay: 20s;
+  }
+
+  .slideshow li:nth-child(4) {
+    background-image: url("../LoganPhotos/SnakeRiverOverlook.jpg");
+    animation-delay: 30s;
+  }
+
+  .slideshow li:nth-child(5) {
+    background-image: url("../LoganPhotos/TheArchwayToTheWest.jpg");
+    animation-delay: 40s;
+  }
+}
+
 @keyframes imageAnimation {
   0% {
     opacity: 0;
