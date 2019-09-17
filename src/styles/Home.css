@@ -54,7 +54,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .slideshow li:nth-child(1) {
-    background-image: url("../LoganPhotos/ChasingWaterfalls.jpg");
+    background-image: url("../LoganPhotos/TheUpsideDown.jpg");
   }
 
   .slideshow li:nth-child(2) {
