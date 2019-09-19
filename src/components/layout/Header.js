@@ -11,15 +11,16 @@ const Header = ({ show, handleClose, handleShow }) => {
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='mr-auto'>
             <Nav.Link href='/'>Home</Nav.Link>
-            <NavDropdown title='Portfolio Prints' id='basic-nav-dropdown'>
-              <NavDropdown.Item href='/prints/landscape'>
+            <Nav.Link href='/portfolio'>Portfolio</Nav.Link>
+            {/* <NavDropdown title='Portfolio Prints' id='basic-nav-dropdown'>
+              {/* <NavDropdown.Item href='/prints/landscape'>
                 Landscape
               </NavDropdown.Item>
               <NavDropdown.Item href='/prints/portrait'>
                 Portrait
-              </NavDropdown.Item>
-              <NavDropdown.Item href='/prints/all'>All Photos</NavDropdown.Item>
-            </NavDropdown>
+              </NavDropdown.Item> */}
+            {/* <NavDropdown.Item href='/prints/all'>All Photos</NavDropdown.Item>
+            </NavDropdown> */}{" "}
             <Nav.Link href='/about'>About</Nav.Link>
             <Nav.Link href='#'>
               <Nav.Item onClick={handleShow}>Contact</Nav.Item>
