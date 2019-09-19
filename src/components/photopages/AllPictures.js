@@ -1,16 +1,22 @@
 import React from "react";
 // import { render } from 'react-dom';
 import Gallery from "react-photo-gallery";
+import ImageSelection from "./ImageSelection";
 
-const AllPictures = ({ allPictures }) => {
+const AllPictures = ({ photos }) => {
   let key;
 
-  allPictures.map(picture => {
-    return (key = picture.name);
+  photos.map(photo => {
+    return (key = photo.id);
   });
+
+  const imageRenderer = ({ photo }) => {
+    return <ImageSelection key={key} photo={photo} />;
+  };
+
   return (
     <div className='mt-2 mb-5'>
-      <Gallery key={key} photos={allPictures} />
+      <Gallery photos={photos} renderImage={imageRenderer} />
     </div>
   );
 };
