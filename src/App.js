@@ -224,7 +224,7 @@ const App = () => {
             <Route exact path='/' component={Home} />
             <Route
               exact
-              path='/prints/all'
+              path='/portfolio'
               render={props => <AllPictures photos={photos} />}
             />
             <Route exact path='/about' component={About} />
