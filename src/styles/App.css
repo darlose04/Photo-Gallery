@@ -1,5 +1,5 @@
 body {
-  background-color: gray;
+  background-color: #afabab;
 }
 
 .navbar .navbar-brand {
@@ -8,4 +8,8 @@ body {
 
 .navbar .navbar-nav .nav-item .nav-link {
   color: #fff;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #000;
 }
