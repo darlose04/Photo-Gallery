@@ -1,8 +1,6 @@
 import React from "react";
-import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
 
-const Contact = ({ show, handleClose }) => {
+const Contact = ({ show, handleClose, handleShow }) => {
   const ulStyle = {
     listStyle: "none"
   };
@@ -13,37 +11,73 @@ const Contact = ({ show, handleClose }) => {
 
   return (
     <div>
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Contact Logan</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <ul style={ulStyle}>
-            <li>lcwphotos@gmail.com</li>
-            <li>
-              <a
-                style={aStyle}
-                href='https://www.instagram.com/loganwilsonphotography/'
+      {/* <a
+        href='#'
+        className='nav-link'
+        data-toggle='modal'
+        data-target='#exampleModal'
+        handleShow={handleShow}
+      >
+        Contact
+      </a> */}
+      <div
+        className='modal fade'
+        id='exampleModal'
+        tabindex='-1'
+        role='dialog'
+        aria-labelledby='exampleModalLabel'
+        aria-hidden='true'
+        show={show}
+      >
+        <div className='modal-dialog' role='document'>
+          <div className='modal-content'>
+            <div className='modal-header'>
+              <h4 className='modal-title' id='exampleModalLabel'>
+                Contact Logan
+              </h4>
+              <button
+                type='button'
+                className='close'
+                data-dismiss='modal'
+                aria-label='Close'
               >
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a
-                style={aStyle}
-                href='https://www.facebook.com/LoganWilsonPhoto/'
+                <span aria-hidden='true'>&times;</span>
+              </button>
+            </div>
+            <div className='modal-body'>
+              <ul style={ulStyle}>
+                <li>loganwilson@rocketmail.com</li>
+                <li>
+                  <a
+                    style={aStyle}
+                    href='https://www.instagram.com/loganwilsonphotography/'
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    style={aStyle}
+                    href='https://www.facebook.com/LoganWilsonPhoto/'
+                  >
+                    Facebook
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className='modal-footer'>
+              <button
+                type='button'
+                className='btn btn-secondary'
+                data-dismiss='modal'
+                onClick={handleClose}
               >
-                Facebook
-              </a>
-            </li>
-          </ul>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant='secondary' onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
