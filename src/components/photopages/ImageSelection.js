@@ -23,6 +23,7 @@ const ImageSelection = ({ photo }) => {
         src={photo.src}
         alt={photo.title}
       />
+      <style>{`.image-selection:hover{outline:2px solid #06befa}`}</style>
     </div>
   );
 };
