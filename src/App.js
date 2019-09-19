@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import "./App.css";
 
-import Header from "./components/layout/Header";
+// import Header from "./components/layout/Header";
+import Navbar from "./components/layout/Navbar";
 // import Footer from "./components/layout/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -218,7 +219,8 @@ const App = () => {
   return (
     <Router>
       <div className='App'>
-        <Header show={show} handleClose={handleClose} handleShow={handleShow} />
+        <Navbar show={show} handleClose={handleClose} handleShow={handleShow} />
+        {/* <Header show={show} handleClose={handleClose} handleShow={handleShow} /> */}
         <div className='container'>
           <Switch>
             <Route exact path='/' component={Home} />
