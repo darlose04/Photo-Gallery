@@ -7,8 +7,8 @@ import Header from "./components/layout/Header";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Landscape from "./components/photopages/Landscape";
-import Portrait from "./components/photopages/Portrait";
+// import Landscape from "./components/photopages/Landscape";
+// import Portrait from "./components/photopages/Portrait";
 import AllPictures from "./components/photopages/AllPictures";
 
 // landscape image imports
@@ -119,8 +119,9 @@ const App = () => {
     }
   ];
 
-  const allPictures = [
+  const photos = [
     {
+      id: 1,
       name: "Cotton Candy Sunrise",
       src: cottoncandy,
       orientation: "landscape",
@@ -129,6 +130,7 @@ const App = () => {
       height: 3
     },
     {
+      id: 2,
       name: "Deserted Railroad",
       src: railroad,
       orientation: "landscape",
@@ -137,6 +139,7 @@ const App = () => {
       height: 3
     },
     {
+      id: 3,
       name: "Snake River Overlook",
       src: snakeriver,
       orientation: "portrait",
@@ -145,6 +148,7 @@ const App = () => {
       height: 4
     },
     {
+      id: 4,
       name: "Grand Prismatic Spring",
       src: grandspring,
       orientation: "landscape",
@@ -153,6 +157,7 @@ const App = () => {
       height: 3
     },
     {
+      id: 5,
       name: "Lone Eagle Sunset",
       src: loneeagle,
       orientation: "landscape",
@@ -161,6 +166,7 @@ const App = () => {
       height: 3
     },
     {
+      id: 6,
       name: "On the Shoulders of Giants",
       src: giantshoulders,
       orientation: "landscape",
@@ -169,6 +175,7 @@ const App = () => {
       height: 3
     },
     {
+      id: 7,
       name: "Reflections",
       src: reflections,
       orientation: "landscape",
@@ -177,6 +184,7 @@ const App = () => {
       height: 3
     },
     {
+      id: 8,
       name: "Chasing Waterfalls",
       src: waterfalls,
       orientation: "portrait",
@@ -186,6 +194,7 @@ const App = () => {
     },
 
     {
+      id: 9,
       name: "Last Light",
       src: lastlight,
       orientation: "portrait",
@@ -195,6 +204,7 @@ const App = () => {
     },
 
     {
+      id: 10,
       name: "Rustic Barn",
       src: rustic,
       orientation: "landscape",
@@ -203,6 +213,7 @@ const App = () => {
       height: 3
     },
     {
+      id: 11,
       name: "The Archway to the West",
       src: archway,
       orientation: "portrait",
@@ -211,6 +222,7 @@ const App = () => {
       height: 4
     },
     {
+      id: 12,
       name: "Schwabacher Sunrise",
       src: schwabacher,
       orientation: "landscape",
@@ -219,6 +231,7 @@ const App = () => {
       height: 3
     },
     {
+      id: 13,
       name: "Eye to Eye",
       src: eyetoeye,
       orientation: "portrait",
@@ -227,6 +240,7 @@ const App = () => {
       height: 4
     },
     {
+      id: 14,
       name: "Switzerland of America",
       src: swissamerica,
       orientation: "landscape",
@@ -235,6 +249,7 @@ const App = () => {
       height: 3
     },
     {
+      id: 15,
       name: "The Upside Down",
       src: upsidedown,
       orientation: "portrait",
@@ -243,6 +258,7 @@ const App = () => {
       height: 4
     },
     {
+      id: 16,
       name: "Teton Sunrise",
       src: teton,
       orientation: "landscape",
@@ -251,6 +267,7 @@ const App = () => {
       height: 3
     },
     {
+      id: 17,
       name: "The Hazy Bells",
       src: hazybells,
       orientation: "landscape",
@@ -259,6 +276,7 @@ const App = () => {
       height: 3
     },
     {
+      id: 18,
       name: "The Majestics Flatirons",
       src: flatirons,
       orientation: "landscape",
@@ -267,6 +285,7 @@ const App = () => {
       height: 3
     },
     {
+      id: 19,
       name: "The Window to the West",
       src: windowwest,
       orientation: "landscape",
@@ -283,7 +302,7 @@ const App = () => {
         <div className='container'>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route
+            {/* <Route
               exact
               path='/prints/landscape'
               render={props => <Landscape />}
@@ -292,11 +311,11 @@ const App = () => {
               exact
               path='/prints/portrait'
               render={props => <Portrait portraitImages={portraitImages} />}
-            />
+            /> */}
             <Route
               exact
               path='/prints/all'
-              render={props => <AllPictures allPictures={allPictures} />}
+              render={props => <AllPictures photos={photos} />}
             />
             <Route exact path='/about' component={About} />
             <Route exact path='/contact' component={Contact} />
