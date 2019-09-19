@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles/App.css";
 
-// import Header from "./components/layout/Header";
 import Navbar from "./components/layout/Navbar";
 // import Footer from "./components/layout/Footer";
 import Home from "./components/Home";
@@ -220,7 +219,6 @@ const App = () => {
     <Router>
       <div className='App'>
         <Navbar show={show} handleClose={handleClose} handleShow={handleShow} />
-        {/* <Header show={show} handleClose={handleClose} handleShow={handleShow} /> */}
         <div className='container'>
           <Switch>
             <Route exact path='/' component={Home} />
