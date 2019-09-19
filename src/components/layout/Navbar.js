@@ -3,7 +3,7 @@ import Contact from "../Contact";
 
 const Navbar = ({ show, handleClose, handleShow }) => {
   return (
-    <nav class='navbar  sticky-top navbar-expand-sm navbar-light mb-2'>
+    <nav class='navbar sticky-top navbar-expand-sm navbar-light mb-2'>
       <div class='container'>
         <a class='navbar-brand' href='/'>
           Logan Wilson Photography
