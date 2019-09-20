@@ -15,6 +15,10 @@ const ImageSelection = ({ photo }) => {
     ...cont
   };
 
+  const handleImage = () => {
+    console.log(`The image named ${photo.name} was clicked`);
+  };
+
   return (
     <div>
       <img
@@ -22,6 +26,7 @@ const ImageSelection = ({ photo }) => {
         className='image-selection'
         src={photo.src}
         alt={photo.title}
+        onClick={handleImage}
       />
       <style>{`.image-selection:hover{outline:2px solid #06befa}`}</style>
     </div>
