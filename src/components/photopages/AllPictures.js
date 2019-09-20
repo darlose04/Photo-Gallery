@@ -3,14 +3,14 @@ import Gallery from "react-photo-gallery";
 import ImageSelection from "./ImageSelection";
 
 const AllPictures = ({ photos }) => {
-  let key;
+  // let key;
 
-  photos.map(photo => {
-    return (key = photo.id);
-  });
+  // photos.map(photo => {
+  //   return (key = photo.id);
+  // });
 
   const imageRenderer = ({ photo }) => {
-    return <ImageSelection key={key} photo={photo} />;
+    return <ImageSelection key={photo.id} photo={photo} />;
   };
 
   return (
