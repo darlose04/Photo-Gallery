@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact = ({ show, handleClose, handleShow }) => {
+const Contact = ({ handleClose, handleShow }) => {
   const ulStyle = {
     listStyle: "none"
   };
@@ -23,11 +23,10 @@ const Contact = ({ show, handleClose, handleShow }) => {
       <div
         className='modal fade'
         id='exampleModal'
-        tabindex='-1'
+        tabIndex='-1'
         role='dialog'
         aria-labelledby='exampleModalLabel'
         aria-hidden='true'
-        show={show}
       >
         <div className='modal-dialog' role='document'>
           <div className='modal-content'>
