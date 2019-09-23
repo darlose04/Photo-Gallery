@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useCallback } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles/App.css";
 
@@ -33,11 +33,26 @@ import archway from "./LoganPhotos/TheArchwayToTheWest.jpg";
 import upsidedown from "./LoganPhotos/TheUpsideDown.jpg";
 
 const App = () => {
-  const [pictures, setPictures] = useState([]);
+  // const [pictures, setPictures] = useState([]);
   const [show, setShow] = useState(false);
+  // const [showModal, setShowModal] = useState(false);
+  const [currentImage, setCurrentImage] = useState(0);
+  const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  // const handleShowModal = () => setShowModal(!showModal);
+
+  const openLightbox = useCallback((event, { photo, index }) => {
+    setCurrentImage(index);
+    setViewerIsOpen(true);
+  }, []);
+
+  const closeLightbox = () => {
+    setCurrentImage(0);
+    setViewerIsOpen(false);
+  };
 
   const photos = [
     {
@@ -225,7 +240,15 @@ const App = () => {
             <Route
               exact
               path='/portfolio'
-              render={props => <AllPictures photos={photos} />}
+              render={props => (
+                <AllPictures
+                  photos={photos}
+                  openLightbox={openLightbox}
+                  closeLightbox={closeLightbox}
+                  currentImage={currentImage}
+                  viewerIsOpen={viewerIsOpen}
+                />
+              )}
             />
             <Route exact path='/about' component={About} />
             <Route exact path='/contact' component={Contact} />
