@@ -1,21 +1,42 @@
 import React from "react";
 import Gallery from "react-photo-gallery";
-import ImageSelection from "./ImageSelection";
+// import ImageSelection from "./ImageSelection";
+import Carousel, { Modal, ModalGateway } from "react-images";
 
-const AllPictures = ({ photos }) => {
-  // let key;
-
-  // photos.map(photo => {
-  //   return (key = photo.id);
-  // });
-
-  const imageRenderer = ({ photo }) => {
-    return <ImageSelection key={photo.id} photo={photo} />;
-  };
+const AllPictures = ({
+  photos,
+  openLightbox,
+  closeLightbox,
+  currentImage,
+  viewerIsOpen
+}) => {
+  // console.log(photos);
+  // const imageRenderer = ({ photo }) => {
+  //   return (
+  //     <div>
+  //       {/* {console.log(photo)} */}
+  //       <ImageSelection key={photo.id} photo={photo} />
+  //     </div>
+  //   );
+  // };
 
   return (
     <div className='mt-2 mb-5'>
-      <Gallery photos={photos} renderImage={imageRenderer} />
+      <Gallery photos={photos} onClick={openLightbox} />
+      <ModalGateway>
+        {viewerIsOpen ? (
+          <Modal onClose={closeLightbox}>
+            <Carousel
+              currentIndex={currentImage}
+              views={photos.map(photo => ({
+                ...photo,
+                srcset: photo.srcSet,
+                caption: photo.name
+              }))}
+            />
+          </Modal>
+        ) : null}
+      </ModalGateway>
     </div>
   );
 };
