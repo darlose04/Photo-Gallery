@@ -3,7 +3,7 @@ import Contact from "../Contact";
 
 const Navbar = ({ show, handleClose, handleShow }) => {
   return (
-    <div>
+    <div className="container">
       <nav className='navbar sticky-top navbar-expand-sm navbar-light mb-2'>
         <div className='container'>
           <a className='navbar-brand' href='/'>
@@ -18,11 +18,6 @@ const Navbar = ({ show, handleClose, handleShow }) => {
           </button>
           <div id='navbarNav' className='collapse navbar-collapse'>
             <ul className='navbar-nav'>
-              <li className='nav-item '>
-                <a className='nav-link' href='/'>
-                  Home
-                </a>
-              </li>
               <li className='nav-item'>
                 <a className='nav-link' href='/portfolio'>
                   Portfolio
