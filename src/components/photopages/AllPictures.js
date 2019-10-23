@@ -21,7 +21,7 @@ const AllPictures = ({
   // };
 
   return (
-    <div className='mt-2 mb-5'>
+    <div className='mt-2 mb-5 container'>
       <Gallery photos={photos} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (
