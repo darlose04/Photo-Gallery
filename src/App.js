@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles/App.css";
+import axios from "axios";
 
 import Navbar from "./components/layout/Navbar";
 // import Footer from "./components/layout/Footer";
@@ -33,7 +34,7 @@ import archway from "./LoganPhotos/TheArchwayToTheWest.jpg";
 import upsidedown from "./LoganPhotos/TheUpsideDown.jpg";
 
 const App = () => {
-  // const [pictures, setPictures] = useState([]);
+  // const [photos, setPhotos] = useState([]);
   const [show, setShow] = useState(false);
   // const [showModal, setShowModal] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
@@ -53,6 +54,8 @@ const App = () => {
     setCurrentImage(0);
     setViewerIsOpen(false);
   };
+
+  // axios.get('/https://lcwphotography.herokuapp.com/images/files')
 
   const photos = [
     {
