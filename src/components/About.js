@@ -1,5 +1,7 @@
 import React from "react";
-import headshot from "../LoganPhotos/FullSizeRender.jpg";
+// import headshot from "../LoganPhotos/FullSizeRender.jpg";
+import '../styles/About.css'
+
 
 const About = () => {
   const cardStyle = {
@@ -13,7 +15,7 @@ const About = () => {
           <div className='col-md-6'>
             <img
               className='img-thumbnail mt-4 ml-2'
-              src={headshot}
+              src='http://lcwphotos.imgix.net/FullSizeRender.jpg'
               alt='headshot'
             />
           </div>
