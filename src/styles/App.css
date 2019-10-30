@@ -1,5 +1,6 @@
 body {
-  background-color: #afabab;
+  background-image: url(http://lcwphotos.imgix.net/DesertedRailroad.jpg);
+  background-size: cover;
 }
 
 .navbar .navbar-brand {
