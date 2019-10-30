@@ -1,0 +1,18 @@
+.about {
+  border: none;
+  background-color: transparent;
+}
+
+.img-thumbnail {
+  /* border: none; */
+  background-color: transparent;
+  border: none;
+}
+
+.card-title {
+  color: #fff;
+}
+
+.card-text {
+  color: #fff;
+}

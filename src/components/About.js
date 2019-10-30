@@ -10,11 +10,11 @@ const About = () => {
 
   return (
     <div className='mt-3'>
-      <div className='card' style={cardStyle}>
+      <div className='card about' style={cardStyle}>
         <div className='row no-gutters'>
           <div className='col-md-6'>
             <img
-              className='img-thumbnail mt-4 ml-2'
+              className='img-thumbnail rounded headshot mt-4 ml-2'
               src='http://lcwphotos.imgix.net/FullSizeRender.jpg'
               alt='headshot'
             />
