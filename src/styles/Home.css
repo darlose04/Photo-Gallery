@@ -49,6 +49,11 @@
 }
 
 @media screen and (max-width: 500px) {
+  body {
+    background-image: url("http://lcwphotos.imgix.net/SnakeRiverOverlook.jpg");
+    background-size: cover;
+  }
+
   .slideshow li:nth-child(1) {
     background-image: url("http://lcwphotos.imgix.net/TheUpsideDown.jpg");
   }
