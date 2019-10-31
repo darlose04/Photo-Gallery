@@ -25,51 +25,51 @@
 }
 
 .slideshow li:nth-child(1) {
-  background-image: url("../LoganPhotos/CottonCandySunrise.jpg");
+  background-image: url("http://lcwphotos.imgix.net/CottonCandySunrise.jpg");
 }
 
 .slideshow li:nth-child(2) {
-  background-image: url("../LoganPhotos/TheWindowToTheWest.jpg");
+  background-image: url("http://lcwphotos.imgix.net/TheWindowToTheWest.jpg");
   animation-delay: 10s;
 }
 
 .slideshow li:nth-child(3) {
-  background-image: url("../LoganPhotos/DesertedRailroad.jpg");
+  background-image: url("http://lcwphotos.imgix.net/RusticBarn.jpg");
   animation-delay: 20s;
 }
 
 .slideshow li:nth-child(4) {
-  background-image: url("../LoganPhotos/TheMajesticFlatirons.jpg");
+  background-image: url("http://lcwphotos.imgix.net/TheMajesticFlatirons.jpg");
   animation-delay: 30s;
 }
 
 .slideshow li:nth-child(5) {
-  background-image: url("../LoganPhotos/TheHazyBells.jpg");
+  background-image: url("http://lcwphotos.imgix.net/TheHazyBells.jpg");
   animation-delay: 40s;
 }
 
 @media screen and (max-width: 500px) {
   .slideshow li:nth-child(1) {
-    background-image: url("../LoganPhotos/TheUpsideDown.jpg");
+    background-image: url("http://lcwphotos.imgix.net/TheUpsideDown.jpg");
   }
 
   .slideshow li:nth-child(2) {
-    background-image: url("../LoganPhotos/EyeToEye.jpg");
+    background-image: url("http://lcwphotos.imgix.net/EyeToEye.jpg");
     animation-delay: 10s;
   }
 
   .slideshow li:nth-child(3) {
-    background-image: url("../LoganPhotos/LastLight.jpg");
+    background-image: url("http://lcwphotos.imgix.net/LastLight.jpg");
     animation-delay: 20s;
   }
 
   .slideshow li:nth-child(4) {
-    background-image: url("../LoganPhotos/SnakeRiverOverlook.jpg");
+    background-image: url("http://lcwphotos.imgix.net/SnakeRiverOverlook.jpg");
     animation-delay: 30s;
   }
 
   .slideshow li:nth-child(5) {
-    background-image: url("../LoganPhotos/TheArchwayToTheWest.jpg");
+    background-image: url("http://lcwphotos.imgix.net/TheArchwayToTheWest.jpg");
     animation-delay: 40s;
   }
 }
