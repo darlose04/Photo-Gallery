@@ -4,12 +4,13 @@ import '../styles/About.css'
 
 const About = () => {
   const cardStyle = {
-    maxWidth: 1050
+    maxWidth: 1050,
+    backgroundColor: 'rgba(0,0,0,0.6)'
   };
 
   return (
     <div className='mt-3'>
-      <div className='card about' style={cardStyle}>
+      <div className='card about pl-2' style={cardStyle}>
         <div className='row no-gutters'>
           <div className='col-md-6'>
             <img
