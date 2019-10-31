@@ -8,10 +8,14 @@ body {
   background-color: transparent;
 }
 
-.img-thumbnail {
-  /* border: none; */
+.header {
+  width: 100%;
   background-color: transparent;
   border: none;
+}
+
+.rounded {
+  border-radius: 20px;
 }
 
 .card-title {
