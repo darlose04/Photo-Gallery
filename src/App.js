@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles/App.css";
-import axios from "axios";
 
 import Navbar from "./components/layout/Navbar";
 // import Footer from "./components/layout/Footer";
@@ -24,8 +23,6 @@ const App = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  // const handleShowModal = () => setShowModal(!showModal);
-
   const openLightbox = useCallback((event, { photo, index }) => {
     setCurrentImage(index);
     setViewerIsOpen(true);
@@ -35,16 +32,6 @@ const App = () => {
     setCurrentImage(0);
     setViewerIsOpen(false);
   };
-
-  // const getImages = async () => {
-  //   const res = await axios.get("http://localhost:3003/images/files");
-    
-  //   setImages(res.data)
-  // }
-
-  // getImages();
-
-  // console.log(images);
 
   return (
     <Router>
