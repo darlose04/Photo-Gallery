@@ -1,6 +1,5 @@
 import React from "react";
 import Gallery from "react-photo-gallery";
-// import ImageSelection from "./ImageSelection";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
 const AllPictures = ({
@@ -10,16 +9,6 @@ const AllPictures = ({
   currentImage,
   viewerIsOpen
 }) => {
-  // console.log(photos);
-  // const imageRenderer = ({ photo }) => {
-  //   return (
-  //     <div>
-  //       {/* {console.log(photo)} */}
-  //       <ImageSelection key={photo.id} photo={photo} />
-  //     </div>
-  //   );
-  // };
-
   return (
     <div className='mt-2 mb-5 container'>
       <Gallery photos={photos} onClick={openLightbox} />

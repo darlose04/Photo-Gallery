@@ -1,5 +1,4 @@
 import React from "react";
-// import LargeImage from "./LargeImage";
 
 const ImageSelection = ({ photo }) => {
   const cont = {
@@ -17,7 +16,6 @@ const ImageSelection = ({ photo }) => {
   };
 
   const imageModal = () => {
-    // console.log(`${photo.name} clicked`);
     return (
       <div
         className='modal fade'
