@@ -14,7 +14,7 @@ const About = () => {
         <div className='row no-gutters'>
           <div className='col-md-6'>
             <img
-              className='img-thumbnail rounded headshot mt-4 ml-2'
+              className='header rounded float-left mt-4 ml-2'
               src='http://lcwphotos.imgix.net/FullSizeRender.jpg'
               alt='headshot'
             />
