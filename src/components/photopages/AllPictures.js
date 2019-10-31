@@ -14,7 +14,7 @@ const AllPictures = ({
   }
 
   return (
-    <div className='mt-2 mb-5 pt-3 pb-3 container portfolio' style={portfolioStyle}>
+    <div className='mb-5 pt-3 pb-3 container portfolio' style={portfolioStyle}>
       <Gallery photos={photos} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (
