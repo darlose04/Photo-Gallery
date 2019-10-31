@@ -1,5 +1,4 @@
 import React from "react";
-// import headshot from "../LoganPhotos/FullSizeRender.jpg";
 import '../styles/About.css'
 
 

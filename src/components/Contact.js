@@ -11,15 +11,6 @@ const Contact = ({ handleClose, handleShow }) => {
 
   return (
     <div>
-      {/* <a
-        href='#'
-        className='nav-link'
-        data-toggle='modal'
-        data-target='#exampleModal'
-        handleShow={handleShow}
-      >
-        Contact
-      </a> */}
       <div
         className='modal fade'
         id='exampleModal'
