@@ -20,3 +20,9 @@
 .card-text {
   color: #fff;
 }
+
+@media screen and (max-width: 500px) {
+  .header {
+    width: 93%
+  }
+}
