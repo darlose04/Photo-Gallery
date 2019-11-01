@@ -1,28 +1,27 @@
 import React from "react";
-import '../styles/About.css'
-
+import "../styles/About.css";
 
 const About = () => {
   const cardStyle = {
     maxWidth: 1050,
-    backgroundColor: 'rgba(0,0,0,0.6)'
+    backgroundColor: "rgba(0,0,0,0.6)"
   };
 
   return (
-    <div className='mt-3'>
-      <div className='card about pl-2' style={cardStyle}>
-        <div className='row no-gutters'>
-          <div className='col-md-6'>
+    <div className="mt-3">
+      <div className="card about pl-2" style={cardStyle}>
+        <div className="row no-gutters">
+          <div className="col-md-6">
             <img
-              className='header rounded float-left mt-4 ml-2'
-              src='http://lcwphotos.imgix.net/FullSizeRender.jpg'
-              alt='headshot'
+              className="header rounded float-left mt-4 ml-2"
+              src="http://lcwphotos.imgix.net/FullSizeRender.jpg"
+              alt="headshot"
             />
           </div>
-          <div className='col-md-6'>
-            <div className='card-body'>
-              <h2 className='card-title'>About Logan</h2>
-              <p className='card-text'>
+          <div className="col-md-6">
+            <div className="card-body">
+              <h2 className="card-title card-about">About Logan</h2>
+              <p className="card-text about-p">
                 My name is Logan Wilson and I am just a twenty-something trying
                 to turn my hobby of photography into something more. I have my
                 dad to thank for getting me interested in photography at a young
