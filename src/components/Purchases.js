@@ -2,8 +2,9 @@ import React from "react";
 
 const Purchases = ({ photos }) => {
   const purchasesStyle = {
-    maxWidth: 1050,
+    maxWidth: 1100,
     backgroundColor: "rgba(0,0,0,0.7)"
+    // width: "100%"
   };
 
   const photoSelection = () => {
@@ -55,7 +56,7 @@ const Purchases = ({ photos }) => {
                     <option>24x36 Canvas Print ($150.00)</option>
                   </select>
                 </div>
-                <button type="submit" class="btn btn-success">
+                <button type="submit" class="btn btn-success btn-block">
                   Purchase
                 </button>
               </form>
