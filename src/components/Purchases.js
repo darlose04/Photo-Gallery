@@ -1,6 +1,6 @@
 import React from "react";
 
-const Purchases = () => {
+const Purchases = ({ photos }) => {
   const purchasesStyle = {
     maxWidth: 1050,
     backgroundColor: "rgba(0,0,0,0.7)"
@@ -22,8 +22,15 @@ const Purchases = () => {
               <h2 className="card-title card-about">Picture Name Goes Here</h2>
               <p className="card-text font-weight-bold">$25.00+</p>
               <p className="card-text">Free shipping to the United States</p>
+              <p className="card-text">Photos</p>
+              <select className="form-control mb-3">
+                <option>Select a Photo</option>
+                {photos.map(photo => (
+                  <option value={photo.name}>{photo.name}</option>
+                ))}
+              </select>
               <p className="card-text">Style</p>
-              <select class="form-control">
+              <select className="form-control">
                 <option>Select a Style</option>
                 <option>8x10 Fine Art Print ($25.00)</option>
                 <option>8x10 Metal Print ($70.00)</option>
