@@ -45,7 +45,7 @@ const Navbar = ({ show, handleClose, handleShow }) => {
                 </a>
               </li>
             </ul>
-            <ul className="navbar-nav ml-auto">
+            <ul className="navbar-nav ml-auto mr-2">
               <li className="nav-item">
                 <a
                   href="https://www.instagram.com/loganwilsonphotography/"
