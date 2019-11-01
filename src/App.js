@@ -9,11 +9,10 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import AllPictures from "./components/photopages/AllPictures";
 import Purchases from "./components/Purchases";
-import photos from './photos';
-
+import photos from "./photos";
 
 const App = () => {
-  const [images, setImages] = useState([]);
+  // const [images, setImages] = useState([]);
   const [show, setShow] = useState(false);
   // const [showModal, setShowModal] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
@@ -34,14 +33,14 @@ const App = () => {
 
   return (
     <Router>
-      <div className='App'>
+      <div className="App">
         <Navbar show={show} handleClose={handleClose} handleShow={handleShow} />
-        <div className='container'>
+        <div className="container">
           <Switch>
-            <Route exact path='/' component={Home} />
+            <Route exact path="/" component={Home} />
             <Route
               exact
-              path='/portfolio'
+              path="/portfolio"
               render={props => (
                 <AllPictures
                   photos={photos}
@@ -52,9 +51,13 @@ const App = () => {
                 />
               )}
             />
-            <Route exact path='/about' component={About} />
-            <Route exact path='/purchases' component={Purchases} />
-            <Route exact path='/contact' component={Contact} />
+            <Route exact path="/about" component={About} />
+            <Route
+              exact
+              path="/purchases"
+              render={props => <Purchases photos={photos} />}
+            />
+            <Route exact path="/contact" component={Contact} />
           </Switch>
         </div>
         {/* <Footer /> */}
