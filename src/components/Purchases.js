@@ -12,7 +12,7 @@ const Purchases = () => {
         <div className="row no-gutters">
           <div className="col-md-6">
             <img
-              className="header rounded float-left mt-4 ml-2"
+              className="header rounded float-left mt-3 ml-2 mb-3"
               src="http://lcwphotos.imgix.net/CottonCandySunrise.jpg"
               alt="headshot"
             />
@@ -20,7 +20,8 @@ const Purchases = () => {
           <div className="col-md-6">
             <div className="card-body">
               <h2 className="card-title card-about">Picture Name Goes Here</h2>
-              <p className="card-text">$25.00+</p>
+              <p className="card-text font-weight-bold">$25.00+</p>
+              <p className="card-text">Free shipping to the United States</p>
               <p className="card-text">Style</p>
               <select class="form-control">
                 <option>Select a Style</option>
