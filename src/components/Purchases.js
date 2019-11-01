@@ -6,6 +6,14 @@ const Purchases = ({ photos }) => {
     backgroundColor: "rgba(0,0,0,0.7)"
   };
 
+  const photoSelection = () => {
+    return photos.map(photo => (
+      <option className="photoName" key={photo.id} value={photo.name}>
+        {photo.name}
+      </option>
+    ));
+  };
+
   return (
     <div className="container">
       <div className="card about pl-2" style={purchasesStyle}>
@@ -19,15 +27,15 @@ const Purchases = ({ photos }) => {
           </div>
           <div className="col-md-6">
             <div className="card-body">
-              <h2 className="card-title card-about">Picture Name Goes Here</h2>
+              <h2 className="card-title card-about">
+                Photo Selection & Purchase
+              </h2>
               <p className="card-text font-weight-bold">$25.00+</p>
               <p className="card-text">Free shipping to the United States</p>
               <p className="card-text">Photos</p>
               <select className="form-control mb-3">
                 <option>Select a Photo</option>
-                {photos.map(photo => (
-                  <option value={photo.name}>{photo.name}</option>
-                ))}
+                {photoSelection()}
               </select>
               <p className="card-text">Style</p>
               <select className="form-control">
