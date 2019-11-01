@@ -8,9 +8,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import AllPictures from "./components/photopages/AllPictures";
-
+import Purchases from "./components/Purchases";
 import photos from './photos';
-
 
 
 const App = () => {
@@ -54,6 +53,7 @@ const App = () => {
               )}
             />
             <Route exact path='/about' component={About} />
+            <Route exact path='/purchases' component={Purchases} />
             <Route exact path='/contact' component={Contact} />
           </Switch>
         </div>

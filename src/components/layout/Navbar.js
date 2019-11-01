@@ -29,6 +29,11 @@ const Navbar = ({ show, handleClose, handleShow }) => {
                 </a>
               </li>
               <li className='nav-item'>
+                <a href='/purchases' className='nav-link'>
+                  Purchase Prints
+                </a>
+              </li>
+              <li className='nav-item'>
                 <a
                   className='nav-link'
                   onClick={handleShow}
