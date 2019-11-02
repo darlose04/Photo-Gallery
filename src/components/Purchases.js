@@ -15,6 +15,16 @@ const Purchases = ({ photos }) => {
     ));
   };
 
+  let photoName;
+
+  const photoChange = () => {
+    photoName = document.getElementById("photo-value").value;
+
+    // console.log(photoName);
+
+    return photoName;
+  };
+
   return (
     <div className="container">
       <div className="card about pl-2" style={purchasesStyle}>
@@ -36,7 +46,12 @@ const Purchases = ({ photos }) => {
               <form>
                 <label className="card-text">Photos</label>
                 <div className="form-group">
-                  <select className="form-control mb-3">
+                  <select
+                    id="photo-value"
+                    className="form-control mb-3"
+                    // value="photoValue"
+                    // onChange={photoChange}
+                  >
                     <option>Select a Photo</option>
                     {photoSelection()}
                   </select>
@@ -56,7 +71,7 @@ const Purchases = ({ photos }) => {
                     <option>24x36 Canvas Print ($150.00)</option>
                   </select>
                 </div>
-                <button type="submit" class="btn btn-success btn-block">
+                <button type="submit" className="btn btn-success btn-block">
                   Purchase
                 </button>
               </form>
