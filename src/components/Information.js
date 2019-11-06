@@ -109,7 +109,7 @@ const Information = () => {
           <li>From Morrison, Colorado. Free shipping in the United States.</li>
           <li>
             <strong>Returns and exchanges accepted.</strong> Exceptions may
-            apply
+            apply.
           </li>
           <li>Contact me within 14 days of delivery.</li>
           <li>Ship items back within 30 days of delivery.</li>
