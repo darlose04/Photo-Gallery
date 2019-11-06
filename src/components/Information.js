@@ -9,9 +9,9 @@ const Information = () => {
   return (
     <div className="card mt-2" style={purchasesStyle}>
       <div className="card-body">
-        <h2 className="card-title text-white mb-3">
+        <h3 className="card-title text-white mb-3">
           <u>Print Information</u>
-        </h2>
+        </h3>
         <h5 className="card-subtitle mb-1 text-white">
           <strong>FINE ART PRINTS</strong>
         </h5>
