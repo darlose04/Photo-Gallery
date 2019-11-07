@@ -10,11 +10,11 @@ const AllPictures = ({
   viewerIsOpen
 }) => {
   const portfolioStyle = {
-    backgroundColor: 'rgba(0, 0, 0, 0.6)'
-  }
+    backgroundColor: "rgba(0, 0, 0, 0.6)"
+  };
 
   return (
-    <div className='mb-5 pt-3 pb-3 container portfolio' style={portfolioStyle}>
+    <div className="mb-5 pt-3 pb-3 container portfolio" style={portfolioStyle}>
       <Gallery photos={photos} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (
