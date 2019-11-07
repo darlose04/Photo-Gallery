@@ -63,7 +63,7 @@ const Information = () => {
             </h5>
           </li>
           <li>
-            <i class="fas fa-map-marker-alt"></i> Scotts Valley, CA
+            <i className="fas fa-map-marker-alt"></i> Scotts Valley, CA
           </li>
           <li>
             Bay Photo Lab prints all of my photos onto metal through a process
@@ -78,7 +78,7 @@ const Information = () => {
             </h5>
           </li>
           <li>
-            <i class="fas fa-map-marker-alt"></i> Lawrenceville, GA
+            <i className="fas fa-map-marker-alt"></i> Lawrenceville, GA
           </li>
           <li>
             This online canvas printing company prints all of my images onto
@@ -92,7 +92,7 @@ const Information = () => {
             </h5>
           </li>
           <li>
-            <i class="fas fa-map-marker-alt"></i> Md., United States
+            <i className="fas fa-map-marker-alt"></i> Md., United States
           </li>
           <li>
             This professional photo lab prints all of my images onto high
