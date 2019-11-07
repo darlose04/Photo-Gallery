@@ -15,14 +15,11 @@ const Purchases = ({ photos }) => {
     ));
   };
 
-  let photoName;
-
+  // console.log(selectionValue.value);
   const photoChange = () => {
-    photoName = document.getElementById("photo-value").value;
+    let selectionValue = document.getElementById("photo-value");
 
-    // console.log(photoName);
-
-    return photoName;
+    console.log(selectionValue.value);
   };
 
   return (
@@ -50,7 +47,7 @@ const Purchases = ({ photos }) => {
                     id="photo-value"
                     className="form-control mb-3"
                     // value="photoValue"
-                    // onChange={photoChange}
+                    onChange={photoChange}
                   >
                     <option>Select a Photo</option>
                     {photoSelection()}
