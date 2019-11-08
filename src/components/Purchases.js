@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Information from "./Information";
 
 const Purchases = ({ photos }) => {
+  const [source, setSource] = useState(
+    "http://lcwphotos.imgix.net/CottonCandySunrise.jpg"
+  );
+  console.log(source);
+
   const purchasesStyle = {
     maxWidth: 1100,
     backgroundColor: "rgba(0,0,0,0.7)"
@@ -9,34 +14,14 @@ const Purchases = ({ photos }) => {
 
   const photoSelection = () => {
     return photos.map(photo => (
-      <option className="photoName" key={photo.id} value={photo.name}>
+      <option className="photoName" key={photo.id} value={photo.src}>
         {photo.name}
       </option>
     ));
   };
 
-  const photoChange = () => {
-    let selectionValue = document.getElementById("photo-value");
-    // let newArr = selectionValue.value.split(" ");
-    // let urlVar = newArr.join("");
-
-    // console.log(urlVar);
-
-    urlValue(selectionValue);
-  };
-
-  const urlValue = str => {
-    console.log(str.value);
-    let newStr = str.value.split(" ").join("");
-    console.log(newStr);
-
-    return (
-      <img
-        className="header rounded float-right mt-3 mr-2 mb-3"
-        src={`http://lcwphotos.imgix.net/${newStr}.jpg`}
-        alt=""
-      />
-    );
+  const photoChange = event => {
+    setSource(event.target.value);
   };
 
   return (
@@ -50,6 +35,7 @@ const Purchases = ({ photos }) => {
               </h2>
               <p className="card-text font-weight-bold">$25.00+</p>
               <p className="card-text">Free shipping to the United States</p>
+
               <form>
                 <label className="card-text">Photos</label>
                 <div className="form-group">
@@ -84,15 +70,11 @@ const Purchases = ({ photos }) => {
             </div>
           </div>
           <div className="col-md-6">
-            {document.getElementById("photo-value") === null ? (
-              <img
-                className="header rounded float-right mt-3 mr-2 mb-3"
-                src={`http://lcwphotos.imgix.net/CottonCandySunrise.jpg`}
-                alt=""
-              />
-            ) : (
-              photoChange()
-            )}
+            <img
+              className="header rounded float-right mt-3 mr-2 mb-3"
+              src={source}
+              alt=""
+            />
           </div>
         </div>
       </div>
