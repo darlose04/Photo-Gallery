@@ -15,7 +15,6 @@ const Purchases = ({ photos }) => {
     ));
   };
 
-  // console.log(selectionValue.value);
   const photoChange = () => {
     let selectionValue = document.getElementById("photo-value");
 
@@ -24,15 +23,8 @@ const Purchases = ({ photos }) => {
 
   return (
     <div className="container">
-      <div className="card about pl-2" style={purchasesStyle}>
+      <div className="card about pr-2" style={purchasesStyle}>
         <div className="row no-gutters">
-          <div className="col-md-6">
-            <img
-              className="header rounded float-left mt-3 ml-2 mb-3"
-              src="http://lcwphotos.imgix.net/CottonCandySunrise.jpg"
-              alt="headshot"
-            />
-          </div>
           <div className="col-md-6">
             <div className="card-body">
               <h2 className="card-title card-about">
@@ -46,7 +38,6 @@ const Purchases = ({ photos }) => {
                   <select
                     id="photo-value"
                     className="form-control mb-3"
-                    // value="photoValue"
                     onChange={photoChange}
                   >
                     <option>Select a Photo</option>
@@ -73,6 +64,13 @@ const Purchases = ({ photos }) => {
                 </button>
               </form>
             </div>
+          </div>
+          <div className="col-md-6">
+            <img
+              className="header rounded float-right mt-3 mr-2 mb-3"
+              src="http://lcwphotos.imgix.net/CottonCandySunrise.jpg"
+              alt="headshot"
+            />
           </div>
         </div>
       </div>
