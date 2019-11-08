@@ -5,7 +5,6 @@ const Purchases = ({ photos }) => {
   const [source, setSource] = useState(
     "http://lcwphotos.imgix.net/CottonCandySunrise.jpg"
   );
-  console.log(source);
 
   const purchasesStyle = {
     maxWidth: 1100,
