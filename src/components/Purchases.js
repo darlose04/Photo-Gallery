@@ -17,8 +17,26 @@ const Purchases = ({ photos }) => {
 
   const photoChange = () => {
     let selectionValue = document.getElementById("photo-value");
+    // let newArr = selectionValue.value.split(" ");
+    // let urlVar = newArr.join("");
 
-    console.log(selectionValue.value);
+    // console.log(urlVar);
+
+    urlValue(selectionValue);
+  };
+
+  const urlValue = str => {
+    console.log(str.value);
+    let newStr = str.value.split(" ").join("");
+    console.log(newStr);
+
+    return (
+      <img
+        className="header rounded float-right mt-3 mr-2 mb-3"
+        src={`http://lcwphotos.imgix.net/${newStr}.jpg`}
+        alt=""
+      />
+    );
   };
 
   return (
@@ -66,11 +84,15 @@ const Purchases = ({ photos }) => {
             </div>
           </div>
           <div className="col-md-6">
-            <img
-              className="header rounded float-right mt-3 mr-2 mb-3"
-              src="http://lcwphotos.imgix.net/CottonCandySunrise.jpg"
-              alt="headshot"
-            />
+            {document.getElementById("photo-value") === null ? (
+              <img
+                className="header rounded float-right mt-3 mr-2 mb-3"
+                src={`http://lcwphotos.imgix.net/CottonCandySunrise.jpg`}
+                alt=""
+              />
+            ) : (
+              photoChange()
+            )}
           </div>
         </div>
       </div>
