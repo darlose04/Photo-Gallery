@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles/App.css";
+import { StripeProvider } from "react-stripe-elements";
 
 import Navbar from "./components/layout/Navbar";
 // import Footer from "./components/layout/Footer";
@@ -32,37 +33,43 @@ const App = () => {
   };
 
   return (
-    <Router>
-      <div className="App">
-        <Navbar show={show} handleClose={handleClose} handleShow={handleShow} />
-        <div className="container">
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route
-              exact
-              path="/portfolio"
-              render={props => (
-                <AllPictures
-                  photos={photos}
-                  openLightbox={openLightbox}
-                  closeLightbox={closeLightbox}
-                  currentImage={currentImage}
-                  viewerIsOpen={viewerIsOpen}
-                />
-              )}
-            />
-            <Route exact path="/about" component={About} />
-            <Route
-              exact
-              path="/purchases"
-              render={props => <Purchases photos={photos} />}
-            />
-            <Route exact path="/contact" component={Contact} />
-          </Switch>
+    <StripeProvider apiKey="pk_test_Afs1Cv9uH1rq7pEMVj4sGkg1008oAeMGRP">
+      <Router>
+        <div className="App">
+          <Navbar
+            show={show}
+            handleClose={handleClose}
+            handleShow={handleShow}
+          />
+          <div className="container">
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route
+                exact
+                path="/portfolio"
+                render={props => (
+                  <AllPictures
+                    photos={photos}
+                    openLightbox={openLightbox}
+                    closeLightbox={closeLightbox}
+                    currentImage={currentImage}
+                    viewerIsOpen={viewerIsOpen}
+                  />
+                )}
+              />
+              <Route exact path="/about" component={About} />
+              <Route
+                exact
+                path="/purchases"
+                render={props => <Purchases photos={photos} />}
+              />
+              <Route exact path="/contact" component={Contact} />
+            </Switch>
+          </div>
+          {/* <Footer /> */}
         </div>
-        {/* <Footer /> */}
-      </div>
-    </Router>
+      </Router>
+    </StripeProvider>
   );
 };
 
