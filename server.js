@@ -13,4 +13,6 @@ app.get("/", (req, res) => {
   res.send("Add the Stripe Secret Key to the .require('stripe') statement");
 });
 
-const PORT = app.listen();
+const PORT = app.listen(config.PORT, () => {
+  console.log(`Server is running on port ${config.PORT}`);
+});
