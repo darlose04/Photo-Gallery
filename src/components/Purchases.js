@@ -2,10 +2,69 @@ import React, { useState } from "react";
 import Information from "./Information";
 import { Elements, injectStripe } from "react-stripe-elements";
 
+const styles = [
+  {
+    id: 1,
+    type: "Fine Art Print",
+    size: "8x10",
+    price: "$25.00"
+  },
+  {
+    id: 2,
+    type: "Metal Print",
+    size: "8x10",
+    price: "$70.00"
+  },
+  {
+    id: 3,
+    type: "Fine Art Print",
+    size: "11x14",
+    price: "$35.00"
+  },
+  {
+    id: 4,
+    type: "Canvas Print",
+    size: "11x14",
+    price: "$65.00"
+  },
+  {
+    id: 5,
+    type: "Metal Print",
+    size: "11x14",
+    price: "$105.00"
+  },
+  {
+    id: 6,
+    type: "Fine Art Print",
+    size: "16x20",
+    price: "$60.00"
+  },
+  {
+    id: 7,
+    type: "Canvas Print",
+    size: "16x20",
+    price: "$80.00"
+  },
+  {
+    id: 8,
+    type: "Metal Print",
+    size: "16x20",
+    price: "$185.00"
+  },
+  {
+    id: 9,
+    type: "Canvas Print",
+    size: "24x36",
+    price: "$150.00"
+  }
+];
+
 const Purchases = ({ photos }) => {
   const [source, setSource] = useState(
     "http://lcwphotos.imgix.net/CottonCandySunrise.jpg"
   );
+
+  const [price, setPrice] = useState("$25.00");
 
   const purchasesStyle = {
     maxWidth: 1100,
@@ -20,8 +79,20 @@ const Purchases = ({ photos }) => {
     ));
   };
 
+  const styleSelection = () => {
+    return styles.map(style => (
+      <option key={style.id} value={style.price}>
+        {style.size + " " + style.type + " " + style.price}
+      </option>
+    ));
+  };
+
   const photoChange = event => {
     setSource(event.target.value);
+  };
+
+  const styleChange = event => {
+    setPrice(event.target.value);
   };
 
   return (
@@ -50,21 +121,13 @@ const Purchases = ({ photos }) => {
                   </div>
                   <label className="card-text">Style</label>
                   <div className="form-group">
-                    <select className="form-control">
+                    <select className="form-control" onChange={styleChange}>
                       <option>Select a Style</option>
-                      <option>8x10 Fine Art Print ($25.00)</option>
-                      <option>8x10 Metal Print ($70.00)</option>
-                      <option>11x14 Fine Art Print ($35.00)</option>
-                      <option>11x14 Canvas Print ($65.00)</option>
-                      <option>11x14 Metal Print ($105.00)</option>
-                      <option>16x20 Fine Art Print ($60.00)</option>
-                      <option>16x20 Canvas Print ($80.00)</option>
-                      <option>16X20 Metal Print ($185.00)</option>
-                      <option>24x36 Canvas Print ($150.00)</option>
+                      {styleSelection()}
                     </select>
                   </div>
                   <button type="submit" className="btn btn-success btn-block">
-                    Purchase
+                    Purchase for {price}
                   </button>
                 </form>
               </Elements>
