@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Information from "./Information";
-import { Elements, injectStripe } from "react-stripe-elements";
 
 const styles = [
   {
@@ -106,31 +105,29 @@ const Purchases = ({ photos }) => {
               </h2>
               <p className="card-text font-weight-bold">$25.00+</p>
               <p className="card-text">Free shipping to the United States</p>
-              <Elements>
-                <form>
-                  <label className="card-text">Photos</label>
-                  <div className="form-group">
-                    <select
-                      id="photo-value"
-                      className="form-control mb-3"
-                      onChange={photoChange}
-                    >
-                      <option>Select a Photo</option>
-                      {photoSelection()}
-                    </select>
-                  </div>
-                  <label className="card-text">Style</label>
-                  <div className="form-group">
-                    <select className="form-control" onChange={styleChange}>
-                      <option>Select a Style</option>
-                      {styleSelection()}
-                    </select>
-                  </div>
-                  <button type="submit" className="btn btn-success btn-block">
-                    Purchase for {price}
-                  </button>
-                </form>
-              </Elements>
+              <form>
+                <label className="card-text">Photos</label>
+                <div className="form-group">
+                  <select
+                    id="photo-value"
+                    className="form-control mb-3"
+                    onChange={photoChange}
+                  >
+                    <option>Select a Photo</option>
+                    {photoSelection()}
+                  </select>
+                </div>
+                <label className="card-text">Style</label>
+                <div className="form-group">
+                  <select className="form-control" onChange={styleChange}>
+                    <option>Select a Style</option>
+                    {styleSelection()}
+                  </select>
+                </div>
+                <button type="submit" className="btn btn-success btn-block">
+                  Purchase for {price}
+                </button>
+              </form>
             </div>
           </div>
           <div className="col-md-6">
