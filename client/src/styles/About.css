@@ -1,0 +1,28 @@
+.about {
+  border: none;
+  background-color: transparent;
+}
+
+.header {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.rounded {
+  border-radius: 20px;
+}
+
+.card-about {
+  color: #fff;
+}
+
+.card-text {
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    width: 93%;
+  }
+}
