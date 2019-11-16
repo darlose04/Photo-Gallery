@@ -146,7 +146,17 @@ const Purchases = ({ photos }) => {
                 shippingAddress
                 amount={productPrice * 100}
                 name={productName}
-              />
+              >
+                {isNaN(productPrice) ? (
+                  <p className="text-white">
+                    Please select a photo and a style
+                  </p>
+                ) : (
+                  <button type="submit" className="btn btn-success btn-block">
+                    Purchase for ${productPrice}
+                  </button>
+                )}
+              </StripeCheckout>
             </div>
           </div>
           <div className="col-md-6">
