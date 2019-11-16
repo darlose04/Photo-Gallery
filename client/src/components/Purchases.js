@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import Information from "./Information";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+toast.configure();
 
 const styles = [
   {
@@ -99,14 +103,32 @@ const Purchases = ({ photos }) => {
     setProductDetails(event.target.value);
   };
 
-  console.log(productDetails);
+  // console.log(productDetails);
 
   let productPrice = parseInt(productDetails.split(",")[2]);
   let productSize = productDetails.split(",")[0];
   let productType = productDetails.split(",")[1];
 
-  const handleToken = (token, addresses) => {
-    console.log({ token, addresses });
+  const handleToken = async (token, addresses) => {
+    // console.log({ token, addresses });
+
+    const response = await axios.post("http://localhost:5000/checkout", {
+      token,
+      productName,
+      productPrice,
+      productSize,
+      productType
+    });
+
+    const status = response.data;
+
+    if (status === "success") {
+      toast("Success! Check your email for details", {
+        type: "success"
+      });
+    } else {
+      toast("Something went wrong", { type: "error" });
+    }
   };
 
   return (
