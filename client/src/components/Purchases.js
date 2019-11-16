@@ -121,13 +121,12 @@ const Purchases = ({ photos }) => {
     });
 
     const status = response.data;
+    console.log(status);
 
     if (status === "success") {
-      toast("Success! Check your email for details", {
-        type: "success"
-      });
+      alert("Purchase Complete! Check your email for details");
     } else {
-      toast("Something went wrong", { type: "error" });
+      alert("Something went wrong");
     }
   };
 

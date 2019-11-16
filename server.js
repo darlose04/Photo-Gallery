@@ -64,7 +64,7 @@ app.post("/checkout", async (req, res) => {
     status = "failure";
   }
 
-  res.json({ error, status });
+  res.json({ status, error });
 });
 
 const PORT = app.listen(config.PORT, () => {
