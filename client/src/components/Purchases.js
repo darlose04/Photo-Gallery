@@ -8,55 +8,55 @@ const styles = [
     id: 1,
     type: "Fine Art Print",
     size: "8x10",
-    price: "$25.00"
+    price: 25.0
   },
   {
     id: 2,
     type: "Metal Print",
     size: "8x10",
-    price: "$70.00"
+    price: 70.0
   },
   {
     id: 3,
     type: "Fine Art Print",
     size: "11x14",
-    price: "$35.00"
+    price: 35.0
   },
   {
     id: 4,
     type: "Canvas Print",
     size: "11x14",
-    price: "$65.00"
+    price: 65.0
   },
   {
     id: 5,
     type: "Metal Print",
     size: "11x14",
-    price: "$105.00"
+    price: 105.0
   },
   {
     id: 6,
     type: "Fine Art Print",
     size: "16x20",
-    price: "$60.00"
+    price: 60.0
   },
   {
     id: 7,
     type: "Canvas Print",
     size: "16x20",
-    price: "$80.00"
+    price: 80.0
   },
   {
     id: 8,
     type: "Metal Print",
     size: "16x20",
-    price: "$185.00"
+    price: 185.0
   },
   {
     id: 9,
     type: "Canvas Print",
     size: "24x36",
-    price: "$150.00"
+    price: 150.0
   }
 ];
 
@@ -83,7 +83,7 @@ const Purchases = ({ photos }) => {
   const styleSelection = () => {
     return styles.map(style => (
       <option key={style.id} value={[style.size, style.type, style.price]}>
-        {style.size + " " + style.type + " " + style.price}
+        {style.size + " " + style.type + " " + "$" + style.price}
       </option>
     ));
   };
@@ -103,9 +103,10 @@ const Purchases = ({ photos }) => {
     console.log({ token, addresses });
   };
 
-  console.log(source);
-  console.log(productName);
-  console.log(price.split(","));
+  let productPrice = parseInt(price.split(",")[2]);
+  // console.log(productName);
+  // console.log(typeof productPrice);
+  // console.log(productPrice);
 
   return (
     <div className="container">
@@ -146,7 +147,7 @@ const Purchases = ({ photos }) => {
                 token={handleToken}
                 billingAddress
                 shippingAddress
-                amount={price * 100}
+                amount={productPrice * 100}
                 name={productName}
               />
             </div>
