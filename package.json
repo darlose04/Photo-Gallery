@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/darlose04/Photo-Gallery/issues"
   },
-  "homepage": "https://github.com/darlose04/Photo-Gallery#readme"
+  "homepage": "https://github.com/darlose04/Photo-Gallery#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "stripe": "^7.13.0",
+    "uuid": "^3.3.3"
+  }
 }
