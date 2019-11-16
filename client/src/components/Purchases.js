@@ -121,9 +121,9 @@ const Purchases = ({ photos }) => {
     });
 
     const status = response.data;
-    console.log(status);
+    console.log(status.status);
 
-    if (status === "success") {
+    if (status.status === "success") {
       alert("Purchase Complete! Check your email for details");
     } else {
       alert("Something went wrong");
