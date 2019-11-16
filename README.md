@@ -1,3 +1,3 @@
 ## PhotoGallery
 
-A photo gallery site built for a photography to showcase and sell images.
+A photo gallery site built for a photographer to showcase and sell images.
