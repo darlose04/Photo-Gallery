@@ -64,7 +64,7 @@ const Purchases = ({ photos }) => {
   const [source, setSource] = useState(
     "http://lcwphotos.imgix.net/CottonCandySunrise.jpg"
   );
-
+  const [productName, setProductName] = useState("");
   const [price, setPrice] = useState("$25.00");
 
   const purchasesStyle = {
@@ -74,7 +74,7 @@ const Purchases = ({ photos }) => {
 
   const photoSelection = () => {
     return photos.map(photo => (
-      <option className="photoName" key={photo.id} value={photo.src}>
+      <option className="photoName" key={photo.id} value={photo.name}>
         {photo.name}
       </option>
     ));
@@ -82,14 +82,17 @@ const Purchases = ({ photos }) => {
 
   const styleSelection = () => {
     return styles.map(style => (
-      <option key={style.id} value={style.price}>
+      <option key={style.id} value={[style.size, style.type, style.price]}>
         {style.size + " " + style.type + " " + style.price}
       </option>
     ));
   };
 
   const photoChange = event => {
-    setSource(event.target.value);
+    setProductName(event.target.value);
+    setSource(
+      `http://lcwphotos.imgix.net/${event.target.value.split(" ").join("")}.jpg`
+    );
   };
 
   const styleChange = event => {
@@ -99,6 +102,10 @@ const Purchases = ({ photos }) => {
   const handleToken = (token, addresses) => {
     console.log({ token, addresses });
   };
+
+  console.log(source);
+  console.log(productName);
+  console.log(price.split(","));
 
   return (
     <div className="container">
@@ -137,6 +144,10 @@ const Purchases = ({ photos }) => {
               <StripeCheckout
                 stripeKey="pk_test_Afs1Cv9uH1rq7pEMVj4sGkg1008oAeMGRP"
                 token={handleToken}
+                billingAddress
+                shippingAddress
+                amount={price * 100}
+                name={productName}
               />
             </div>
           </div>
