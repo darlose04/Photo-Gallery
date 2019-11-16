@@ -65,7 +65,7 @@ const Purchases = ({ photos }) => {
     "http://lcwphotos.imgix.net/CottonCandySunrise.jpg"
   );
   const [productName, setProductName] = useState("");
-  const [price, setPrice] = useState("$25.00");
+  const [productDetails, setProductDetails] = useState("$25.00");
 
   const purchasesStyle = {
     maxWidth: 1100,
@@ -96,17 +96,18 @@ const Purchases = ({ photos }) => {
   };
 
   const styleChange = event => {
-    setPrice(event.target.value);
+    setProductDetails(event.target.value);
   };
+
+  console.log(productDetails);
+
+  let productPrice = parseInt(productDetails.split(",")[2]);
+  let productSize = productDetails.split(",")[0];
+  let productType = productDetails.split(",")[1];
 
   const handleToken = (token, addresses) => {
     console.log({ token, addresses });
   };
-
-  let productPrice = parseInt(price.split(",")[2]);
-  // console.log(productName);
-  // console.log(typeof productPrice);
-  // console.log(productPrice);
 
   return (
     <div className="container">
