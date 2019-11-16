@@ -6,6 +6,7 @@
 /client/.pnp
 /client.pnp.js
 /client/.netlify/
+.env
 
 # testing
 /coverage
