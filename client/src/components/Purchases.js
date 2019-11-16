@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Information from "./Information";
+import StripeCheckout from "react-stripe-checkout";
+import axios from "axios";
 
 const styles = [
   {
@@ -94,6 +96,10 @@ const Purchases = ({ photos }) => {
     setPrice(event.target.value);
   };
 
+  const handleToken = (token, addresses) => {
+    console.log({ token, addresses });
+  };
+
   return (
     <div className="container">
       <div className="card about pr-2" style={purchasesStyle}>
@@ -124,10 +130,14 @@ const Purchases = ({ photos }) => {
                     {styleSelection()}
                   </select>
                 </div>
-                <button type="submit" className="btn btn-success btn-block">
+                {/* <button type="submit" className="btn btn-success btn-block">
                   Purchase for {price}
-                </button>
+                </button> */}
               </form>
+              <StripeCheckout
+                stripeKey="pk_test_Afs1Cv9uH1rq7pEMVj4sGkg1008oAeMGRP"
+                token={handleToken}
+              />
             </div>
           </div>
           <div className="col-md-6">
