@@ -138,9 +138,6 @@ const Purchases = ({ photos }) => {
                     {styleSelection()}
                   </select>
                 </div>
-                {/* <button type="submit" className="btn btn-success btn-block">
-                  Purchase for {price}
-                </button> */}
               </form>
               <StripeCheckout
                 stripeKey="pk_test_Afs1Cv9uH1rq7pEMVj4sGkg1008oAeMGRP"
