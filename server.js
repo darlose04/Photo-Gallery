@@ -9,10 +9,6 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.get("/", (req, res) => {
-  res.send("Add the Stripe Secret Key to the .require('stripe') statement");
-});
-
 app.post("/checkout", async (req, res) => {
   console.log("Request: ", req.body);
 
