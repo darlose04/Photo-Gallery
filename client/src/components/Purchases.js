@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Information from "./Information";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 toast.configure();
 
