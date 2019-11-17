@@ -67,6 +67,8 @@ app.post("/checkout", async (req, res) => {
   res.json({ status, error });
 });
 
-const PORT = app.listen(config.PORT, () => {
-  console.log(`Server is running on port ${config.PORT}`);
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
