@@ -3,8 +3,6 @@ import Information from "./Information";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
 
-toast.configure();
-
 const styles = [
   {
     id: 1,
@@ -110,13 +108,16 @@ const Purchases = ({ photos }) => {
   const handleToken = async (token, addresses) => {
     // console.log({ token, addresses });
 
-    const response = await axios.post("http://localhost:5000/checkout", {
-      token,
-      productName,
-      productPrice,
-      productSize,
-      productType
-    });
+    const response = await axios.post(
+      "https://logancwilsonphotography.herokuapp.com/checkout",
+      {
+        token,
+        productName,
+        productPrice,
+        productSize,
+        productType
+      }
+    );
 
     const status = response.data;
     console.log(status.status);
