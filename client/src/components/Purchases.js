@@ -83,7 +83,7 @@ const Purchases = ({ photos }) => {
   const styleSelection = () => {
     return styles.map(style => (
       <option key={style.id} value={[style.size, style.type, style.price]}>
-        {style.size + " " + style.type + " " + "$" + style.price}
+        {`${style.size} ${style.type} $${style.price}`}
       </option>
     ));
   };
