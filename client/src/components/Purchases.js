@@ -160,24 +160,22 @@ const Purchases = ({ photos }) => {
                   </select>
                 </div>
               </form>
-              <StripeCheckout
-                stripeKey="pk_test_Afs1Cv9uH1rq7pEMVj4sGkg1008oAeMGRP"
-                token={handleToken}
-                billingAddress
-                shippingAddress
-                amount={productPrice * 100}
-                name={productName}
-              >
-                {isNaN(productPrice) ? (
-                  <p className="text-white">
-                    Please select a photo and a style
-                  </p>
-                ) : (
+              {isNaN(productPrice) ? (
+                <p className="text-white">Please select a photo and a style</p>
+              ) : (
+                <StripeCheckout
+                  stripeKey="pk_test_Afs1Cv9uH1rq7pEMVj4sGkg1008oAeMGRP"
+                  token={handleToken}
+                  billingAddress
+                  shippingAddress
+                  amount={productPrice * 100}
+                  name={productName}
+                >
                   <button type="submit" className="btn btn-success btn-block">
                     Purchase for ${productPrice}
                   </button>
-                )}
-              </StripeCheckout>
+                </StripeCheckout>
+              )}
             </div>
           </div>
           <div className="col-md-6">
