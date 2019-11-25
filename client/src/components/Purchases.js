@@ -105,6 +105,9 @@ const Purchases = ({ photos }) => {
   let productSize = productDetails.split(",")[0];
   let productType = productDetails.split(",")[1];
 
+  console.log(productSize);
+  console.log(typeof productSize);
+
   const handleToken = async (token, addresses) => {
     // console.log({ token, addresses });
 
@@ -160,6 +163,12 @@ const Purchases = ({ photos }) => {
                   </select>
                 </div>
               </form>
+              {productSize === "8x10" ? (
+                <p className="alert alert-danger" role="alert">
+                  Selecting this size may result in significant photo cropping
+                  of final product!
+                </p>
+              ) : null}
               {isNaN(productPrice) ? (
                 <p className="text-white">Please select a photo and a style</p>
               ) : (
