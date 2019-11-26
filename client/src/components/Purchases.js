@@ -168,7 +168,7 @@ const Purchases = ({ photos }) => {
                 <p className="text-white">Please select a photo and a style</p>
               ) : (
                 <StripeCheckout
-                  stripeKey="pk_test_cFoyWCBbWuYzCd7sSL7OYfJg00eAEAhyZm"
+                  stripeKey="pk_live_NfUn28zVGn82Y5WW2exzyyRw00ygY2yGyI"
                   token={handleToken}
                   billingAddress
                   shippingAddress
