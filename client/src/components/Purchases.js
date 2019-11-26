@@ -69,7 +69,7 @@ const Purchases = ({ photos }) => {
 
   const purchasesStyle = {
     maxWidth: 1100,
-    backgroundColor: "rgba(0,0,0,0.7)"
+    backgroundColor: "rgba(0,0,0,0.8)"
   };
 
   const photoSelection = () => {
