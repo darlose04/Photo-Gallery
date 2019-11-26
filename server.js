@@ -2,7 +2,7 @@ const cors = require("cors");
 const express = require("express");
 const uuid = require("uuid/v4");
 const config = require("./config");
-const stripe = require("stripe")(config.SECRET_TEST_KEY);
+const stripe = require("stripe")(config.SECRET_LIVE_KEY);
 
 const app = express();
 
