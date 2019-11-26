@@ -29,7 +29,7 @@
 }
 
 .slideshow li:nth-child(2) {
-  background-image: url("https://lcwphotos.imgix.net/TheWindowToTheWest.jpg");
+  background-image: url("https://lcwphotos.imgix.net/WindowtotheWest.jpg");
   animation-delay: 10s;
 }
 
@@ -74,7 +74,7 @@
   }
 
   .slideshow li:nth-child(5) {
-    background-image: url("https://lcwphotos.imgix.net/TheArchwayToTheWest.jpg");
+    background-image: url("https://lcwphotos.imgix.net/ArchwaytotheWest.jpg");
     animation-delay: 40s;
   }
 }
