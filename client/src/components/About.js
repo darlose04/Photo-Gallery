@@ -4,7 +4,7 @@ import "../styles/About.css";
 const About = () => {
   const cardStyle = {
     maxWidth: 1100,
-    backgroundColor: "rgba(0,0,0,0.6)"
+    backgroundColor: "rgba(0,0,0,0.8)"
     // width: "100%"
   };
 
@@ -39,6 +39,71 @@ const About = () => {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="card mt-2" style={cardStyle}>
+        <div className="card-body">
+          <h3 className="card-title text-white">
+            <u>Production Partners</u>
+          </h3>
+          <ul className="card-text list-unstyled">
+            <li>
+              <h5>
+                <strong>
+                  <a className="text-white" href="https://www.bayphoto.com/">
+                    Bay Photo Lab
+                  </a>
+                </strong>
+              </h5>
+            </li>
+            <li>
+              <i className="fas fa-map-marker-alt"></i> Scotts Valley, CA
+            </li>
+            <li>
+              Bay Photo Lab prints all of my photos onto metal through a process
+              called dye-sublimation. I chose Bay Photo lab because they offer
+              high quality metal prints for a reasonable price.
+            </li>
+          </ul>
+          <ul className="card-text list-unstyled">
+            <li>
+              <h5>
+                <strong>
+                  <a className="text-white" href="https://www.canvaschamp.com/">
+                    Canvas Champ
+                  </a>
+                </strong>
+              </h5>
+            </li>
+            <li>
+              <i className="fas fa-map-marker-alt"></i> Lawrenceville, GA
+            </li>
+            <li>
+              This online canvas printing company prints all of my images onto
+              canvas.
+            </li>
+          </ul>
+          <ul className="card-text list-unstyled">
+            <li>
+              <h5>
+                <strong>
+                  <a
+                    className="text-white"
+                    href="https://www.nationsphotolab.com/"
+                  >
+                    Nations Photo Lab
+                  </a>
+                </strong>
+              </h5>
+            </li>
+            <li>
+              <i className="fas fa-map-marker-alt"></i> Md., United States
+            </li>
+            <li>
+              This professional photo lab prints all of my images onto high
+              quality photo paper.
+            </li>
+          </ul>
         </div>
       </div>
     </div>

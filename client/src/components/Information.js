@@ -3,7 +3,7 @@ import React from "react";
 const Information = () => {
   const purchasesStyle = {
     maxWidth: 1100,
-    backgroundColor: "rgba(0,0,0,0.7)"
+    backgroundColor: "rgba(0,0,0,0.8)"
   };
 
   return (
@@ -53,52 +53,7 @@ const Information = () => {
         <p className="card-text">
           *Additional charges may apply for custom orders*
         </p>
-        <h3 className="card-title text-white">
-          <u>Production Partners</u>
-        </h3>
-        <ul className="card-text list-unstyled">
-          <li>
-            <h5>
-              <strong>Bay Photo Lab</strong>
-            </h5>
-          </li>
-          <li>
-            <i className="fas fa-map-marker-alt"></i> Scotts Valley, CA
-          </li>
-          <li>
-            Bay Photo Lab prints all of my photos onto metal through a process
-            called dye-sublimation. I chose Bay Photo lab because they offer
-            high quality metal prints for a reasonable price.
-          </li>
-        </ul>
-        <ul className="card-text list-unstyled">
-          <li>
-            <h5>
-              <strong>Canvas Champ</strong>
-            </h5>
-          </li>
-          <li>
-            <i className="fas fa-map-marker-alt"></i> Lawrenceville, GA
-          </li>
-          <li>
-            This online canvas printing company prints all of my images onto
-            canvas.
-          </li>
-        </ul>
-        <ul className="card-text list-unstyled">
-          <li>
-            <h5>
-              <strong>Nations Photo Lab</strong>
-            </h5>
-          </li>
-          <li>
-            <i className="fas fa-map-marker-alt"></i> Md., United States
-          </li>
-          <li>
-            This professional photo lab prints all of my images onto high
-            quality photo paper.
-          </li>
-        </ul>
+
         <h3 className="card-title text-white">
           <u>Shipping & Returns</u>
         </h3>
