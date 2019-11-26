@@ -25,56 +25,56 @@
 }
 
 .slideshow li:nth-child(1) {
-  background-image: url("http://lcwphotos.imgix.net/CottonCandySunrise.jpg");
+  background-image: url("https://lcwphotos.imgix.net/CottonCandySunrise.jpg");
 }
 
 .slideshow li:nth-child(2) {
-  background-image: url("http://lcwphotos.imgix.net/TheWindowToTheWest.jpg");
+  background-image: url("https://lcwphotos.imgix.net/TheWindowToTheWest.jpg");
   animation-delay: 10s;
 }
 
 .slideshow li:nth-child(3) {
-  background-image: url("http://lcwphotos.imgix.net/RusticBarn.jpg");
+  background-image: url("https://lcwphotos.imgix.net/RusticBarn.jpg");
   animation-delay: 20s;
 }
 
 .slideshow li:nth-child(4) {
-  background-image: url("http://lcwphotos.imgix.net/TheMajesticFlatirons.jpg");
+  background-image: url("https://lcwphotos.imgix.net/TheMajesticFlatirons.jpg");
   animation-delay: 30s;
 }
 
 .slideshow li:nth-child(5) {
-  background-image: url("http://lcwphotos.imgix.net/TheHazyBells.jpg");
+  background-image: url("https://lcwphotos.imgix.net/TheHazyBells.jpg");
   animation-delay: 40s;
 }
 
 @media screen and (max-width: 500px) {
   body {
-    background-image: url("http://lcwphotos.imgix.net/SnakeRiverOverlook.jpg");
+    background-image: url("https://lcwphotos.imgix.net/SnakeRiverOverlook.jpg");
     background-size: cover;
   }
 
   .slideshow li:nth-child(1) {
-    background-image: url("http://lcwphotos.imgix.net/TheUpsideDown.jpg");
+    background-image: url("https://lcwphotos.imgix.net/TheUpsideDown.jpg");
   }
 
   .slideshow li:nth-child(2) {
-    background-image: url("http://lcwphotos.imgix.net/EyeToEye.jpg");
+    background-image: url("https://lcwphotos.imgix.net/EyeToEye.jpg");
     animation-delay: 10s;
   }
 
   .slideshow li:nth-child(3) {
-    background-image: url("http://lcwphotos.imgix.net/LastLight.jpg");
+    background-image: url("https://lcwphotos.imgix.net/LastLight.jpg");
     animation-delay: 20s;
   }
 
   .slideshow li:nth-child(4) {
-    background-image: url("http://lcwphotos.imgix.net/SnakeRiverOverlook.jpg");
+    background-image: url("https://lcwphotos.imgix.net/SnakeRiverOverlook.jpg");
     animation-delay: 30s;
   }
 
   .slideshow li:nth-child(5) {
-    background-image: url("http://lcwphotos.imgix.net/TheArchwayToTheWest.jpg");
+    background-image: url("https://lcwphotos.imgix.net/TheArchwayToTheWest.jpg");
     animation-delay: 40s;
   }
 }
