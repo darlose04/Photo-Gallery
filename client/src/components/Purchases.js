@@ -128,7 +128,7 @@ const Purchases = ({ photos }) => {
   };
 
   return (
-    <div className="container">
+    <div className="container mb-5">
       <div className="card about pr-2" style={purchasesStyle}>
         <div className="row no-gutters">
           <div className="col-md-6">
