@@ -101,18 +101,11 @@ const Purchases = ({ photos }) => {
     setProductDetails(event.target.value);
   };
 
-  // console.log(productDetails);
-
   let productPrice = parseInt(productDetails.split(",")[2]);
   let productSize = productDetails.split(",")[0];
   let productType = productDetails.split(",")[1];
 
-  console.log(productSize);
-  console.log(typeof productSize);
-
   const handleToken = async (token, addresses) => {
-    // console.log({ token, addresses });
-
     const response = await axios.post(
       "https://logancwilsonphotography.herokuapp.com/checkout",
       {
