@@ -2,7 +2,7 @@ const photos = [
   {
     id: 1,
     name: "Cotton Candy Sunrise",
-    src: "http://lcwphotos.imgix.net/CottonCandySunrise.jpg",
+    src: "https://lcwphotos.imgix.net/CottonCandySunrise.jpg",
     orientation: "landscape",
     width: 4,
     height: 3
@@ -10,7 +10,7 @@ const photos = [
   {
     id: 2,
     name: "Deserted Railroad",
-    src: "http://lcwphotos.imgix.net/DesertedRailroad.jpg",
+    src: "https://lcwphotos.imgix.net/DesertedRailroad.jpg",
     orientation: "landscape",
     width: 4,
     height: 3
@@ -18,7 +18,7 @@ const photos = [
   {
     id: 3,
     name: "Snake River Overlook",
-    src: "http://lcwphotos.imgix.net/SnakeRiverOverlook.jpg",
+    src: "https://lcwphotos.imgix.net/SnakeRiverOverlook.jpg",
     orientation: "portrait",
     width: 3,
     height: 4
@@ -26,7 +26,7 @@ const photos = [
   {
     id: 4,
     name: "Grand Prismatic Spring",
-    src: "http://lcwphotos.imgix.net/GrandPrismaticSpring.jpg",
+    src: "https://lcwphotos.imgix.net/GrandPrismaticSpring.jpg",
     orientation: "landscape",
     width: 4,
     height: 3
@@ -34,7 +34,7 @@ const photos = [
   {
     id: 5,
     name: "Lone Eagle Sunset",
-    src: "http://lcwphotos.imgix.net/LoneEagleSunset.jpg",
+    src: "https://lcwphotos.imgix.net/LoneEagleSunset.jpg",
     orientation: "landscape",
     width: 4,
     height: 3
@@ -42,7 +42,7 @@ const photos = [
   {
     id: 6,
     name: "On the Shoulders of Giants",
-    src: "http://lcwphotos.imgix.net/OntheShouldersofGiants.jpg",
+    src: "https://lcwphotos.imgix.net/OntheShouldersofGiants.jpg",
     orientation: "landscape",
     width: 4,
     height: 3
@@ -50,7 +50,7 @@ const photos = [
   {
     id: 7,
     name: "Reflections",
-    src: "http://lcwphotos.imgix.net/Reflections.jpg",
+    src: "https://lcwphotos.imgix.net/Reflections.jpg",
     orientation: "landscape",
     width: 4,
     height: 3
@@ -58,7 +58,7 @@ const photos = [
   {
     id: 8,
     name: "Chasing Waterfalls",
-    src: "http://lcwphotos.imgix.net/ChasingWaterfalls.jpg",
+    src: "https://lcwphotos.imgix.net/ChasingWaterfalls.jpg",
     orientation: "portrait",
     width: 3,
     height: 4
@@ -67,7 +67,7 @@ const photos = [
   {
     id: 9,
     name: "Last Light",
-    src: "http://lcwphotos.imgix.net/LastLight.jpg",
+    src: "https://lcwphotos.imgix.net/LastLight.jpg",
     orientation: "portrait",
     width: 3,
     height: 4
@@ -76,7 +76,7 @@ const photos = [
   {
     id: 10,
     name: "Rustic Barn",
-    src: "http://lcwphotos.imgix.net/RusticBarn.jpg",
+    src: "https://lcwphotos.imgix.net/RusticBarn.jpg",
     orientation: "landscape",
     width: 4,
     height: 3
@@ -84,7 +84,7 @@ const photos = [
   {
     id: 11,
     name: "The Archway to the West",
-    src: "http://lcwphotos.imgix.net/TheArchwayToTheWest.jpg",
+    src: "https://lcwphotos.imgix.net/TheArchwayToTheWest.jpg",
     orientation: "portrait",
     width: 3,
     height: 4
@@ -92,7 +92,7 @@ const photos = [
   {
     id: 12,
     name: "Schwabacher Sunrise",
-    src: "http://lcwphotos.imgix.net/SchwabacherSunrise.jpg",
+    src: "https://lcwphotos.imgix.net/SchwabacherSunrise.jpg",
     orientation: "landscape",
     width: 4,
     height: 3
@@ -100,7 +100,7 @@ const photos = [
   {
     id: 13,
     name: "Eye to Eye",
-    src: "http://lcwphotos.imgix.net/EyeToEye.jpg",
+    src: "https://lcwphotos.imgix.net/EyeToEye.jpg",
     orientation: "portrait",
     width: 3,
     height: 5
@@ -108,7 +108,7 @@ const photos = [
   {
     id: 14,
     name: "Switzerland of America",
-    src: "http://lcwphotos.imgix.net/SwitzerlandofAmerica.jpg",
+    src: "https://lcwphotos.imgix.net/SwitzerlandofAmerica.jpg",
     orientation: "landscape",
     width: 4,
     height: 3
@@ -116,7 +116,7 @@ const photos = [
   {
     id: 15,
     name: "The Upside Down",
-    src: "http://lcwphotos.imgix.net/TheUpsideDown.jpg",
+    src: "https://lcwphotos.imgix.net/TheUpsideDown.jpg",
     orientation: "portrait",
     width: 3,
     height: 5
@@ -124,7 +124,7 @@ const photos = [
   {
     id: 16,
     name: "Teton Sunrise",
-    src: "http://lcwphotos.imgix.net/TetonSunrise.jpg",
+    src: "https://lcwphotos.imgix.net/TetonSunrise.jpg",
     orientation: "landscape",
     width: 4,
     height: 3
@@ -132,7 +132,7 @@ const photos = [
   {
     id: 17,
     name: "The Hazy Bells",
-    src: "http://lcwphotos.imgix.net/TheHazyBells.jpg",
+    src: "https://lcwphotos.imgix.net/TheHazyBells.jpg",
     orientation: "landscape",
     width: 4,
     height: 3
@@ -140,7 +140,7 @@ const photos = [
   {
     id: 18,
     name: "The Majestic Flatirons",
-    src: "http://lcwphotos.imgix.net/TheMajesticFlatirons.jpg",
+    src: "https://lcwphotos.imgix.net/TheMajesticFlatirons.jpg",
     orientation: "landscape",
     width: 4,
     height: 3
@@ -148,7 +148,7 @@ const photos = [
   {
     id: 19,
     name: "The Window to the West",
-    src: "http://lcwphotos.imgix.net/TheWindowToTheWest.jpg",
+    src: "https://lcwphotos.imgix.net/TheWindowToTheWest.jpg",
     orientation: "landscape",
     width: 4,
     height: 3
