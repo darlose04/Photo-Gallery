@@ -39,12 +39,12 @@
 }
 
 .slideshow li:nth-child(4) {
-  background-image: url("https://lcwphotos.imgix.net/TheMajesticFlatirons.jpg");
+  background-image: url("https://lcwphotos.imgix.net/TheMajesticFlatironsedit.jpg");
   animation-delay: 30s;
 }
 
 .slideshow li:nth-child(5) {
-  background-image: url("https://lcwphotos.imgix.net/TheHazyBells.jpg");
+  background-image: url("https://lcwphotos.imgix.net/TheHazyBellsedit.jpg");
   animation-delay: 40s;
 }
 
@@ -74,7 +74,7 @@
   }
 
   .slideshow li:nth-child(5) {
-    background-image: url("https://lcwphotos.imgix.net/ArchwaytotheWest.jpg");
+    background-image: url("https://lcwphotos.imgix.net/ArchwaytotheWestedit.jpg");
     animation-delay: 40s;
   }
 }
