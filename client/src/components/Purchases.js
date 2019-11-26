@@ -7,14 +7,14 @@ const styles = [
   {
     id: 1,
     type: "Fine Art Print",
-    size: "8x10",
+    size: "8x12",
     price: 25.0
   },
   {
     id: 2,
     type: "Metal Print",
-    size: "8x10",
-    price: 70.0
+    size: "8x12",
+    price: 75.0
   },
   {
     id: 3,
@@ -136,7 +136,9 @@ const Purchases = ({ photos }) => {
               <h2 className="card-title card-about">
                 Photo Selection & Purchase
               </h2>
-              <p className="card-text font-weight-bold">$25.00+</p>
+              <div className="alert alert-success text-uppercase">
+                20% off through December 31st!
+              </div>
               <p className="card-text">Free shipping to the United States</p>
               <form>
                 <label className="card-text">Photos</label>
@@ -158,10 +160,11 @@ const Purchases = ({ photos }) => {
                   </select>
                 </div>
               </form>
-              {productSize === "8x10" ? (
+              {productSize === "8x12" ||
+              productSize === "11x14" ||
+              productSize === "16x20" ? (
                 <p className="alert alert-danger" role="alert">
-                  Selecting this size may result in significant photo cropping
-                  of final product!
+                  Cropping may occur at certain print sizes
                 </p>
               ) : null}
               {isNaN(productPrice) ? (
