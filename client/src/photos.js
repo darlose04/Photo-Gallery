@@ -101,8 +101,8 @@ const photos = [
   },
   {
     id: uuid(),
-    name: "The Archway to the West",
-    src: "https://lcwphotos.imgix.net/ArchwaytotheWestedit.jpg",
+    name: "Archway to the West",
+    src: "https://lcwphotos.imgix.net/ArchwaytotheWest.jpg",
     orientation: "portrait",
     width: 3,
     height: 4
@@ -150,7 +150,7 @@ const photos = [
   {
     id: uuid(),
     name: "The Hazy Bells",
-    src: "https://lcwphotos.imgix.net/TheHazyBellsedit.jpg",
+    src: "https://lcwphotos.imgix.net/TheHazyBells.jpg",
     orientation: "landscape",
     width: 4,
     height: 3
@@ -158,7 +158,7 @@ const photos = [
   {
     id: uuid(),
     name: "The Majestic Flatirons",
-    src: "https://lcwphotos.imgix.net/TheMajesticFlatironsedit.jpg",
+    src: "https://lcwphotos.imgix.net/TheMajesticFlatirons.jpg",
     orientation: "landscape",
     width: 4,
     height: 3
