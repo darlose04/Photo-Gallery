@@ -4,8 +4,8 @@ import "../styles/About.css";
 const About = () => {
   const cardStyle = {
     maxWidth: 1100,
-    backgroundColor: "rgba(0,0,0,0.8)"
-    // width: "100%"
+    backgroundColor: "rgba(0,0,0,0.8)",
+    fontSize: "1.02rem"
   };
 
   return (
@@ -14,7 +14,7 @@ const About = () => {
         <div className="row no-gutters">
           <div className="col-md-6">
             <img
-              className="header rounded float-left mt-3 ml-2 mb-3"
+              className="header rounded float-left mt-4 ml-2 mb-3"
               src="https://lcwphotos.imgix.net/FullSizeRender.jpg"
               alt="headshot"
             />
