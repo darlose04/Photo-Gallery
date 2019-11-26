@@ -102,7 +102,7 @@ const photos = [
   {
     id: uuid(),
     name: "The Archway to the West",
-    src: "https://lcwphotos.imgix.net/ArchwayToTheWest.jpg",
+    src: "https://lcwphotos.imgix.net/ArchwaytotheWest.jpg",
     orientation: "portrait",
     width: 3,
     height: 4
@@ -166,7 +166,7 @@ const photos = [
   {
     id: uuid(),
     name: "The Window to the West",
-    src: "https://lcwphotos.imgix.net/WindowToTheWest.jpg",
+    src: "https://lcwphotos.imgix.net/WindowtotheWest.jpg",
     orientation: "landscape",
     width: 4,
     height: 3
