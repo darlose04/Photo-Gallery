@@ -102,6 +102,7 @@ const Purchases = ({ photos }) => {
   };
 
   let productPrice = parseInt(productDetails.split(",")[2]);
+  let salePrice = productPrice * 0.8;
   let productSize = productDetails.split(",")[0];
   let productType = productDetails.split(",")[1];
 
@@ -111,7 +112,7 @@ const Purchases = ({ photos }) => {
       {
         token,
         productName,
-        productPrice,
+        salePrice,
         productSize,
         productType
       }
@@ -171,15 +172,15 @@ const Purchases = ({ photos }) => {
                 <p className="text-white">Please select a photo and a style</p>
               ) : (
                 <StripeCheckout
-                  stripeKey="pk_live_NfUn28zVGn82Y5WW2exzyyRw00ygY2yGyI"
+                  stripeKey="pk_test_SKvfSQs9NbtWMN55svGVM2hE00gHzIxSmc"
                   token={handleToken}
                   billingAddress
                   shippingAddress
-                  amount={productPrice * 100}
+                  amount={salePrice * 100}
                   name={productName}
                 >
                   <button type="submit" className="btn btn-success btn-block">
-                    Purchase for ${productPrice}
+                    Purchase for <del>${productPrice}</del> ${salePrice}
                   </button>
                 </StripeCheckout>
               )}
