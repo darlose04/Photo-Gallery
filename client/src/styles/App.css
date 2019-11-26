@@ -1,6 +1,7 @@
 body {
   background-image: url(https://lcwphotos.imgix.net/DesertedRailroad.jpg);
   background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar .navbar-brand {
