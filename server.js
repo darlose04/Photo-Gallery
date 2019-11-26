@@ -2,7 +2,7 @@ const cors = require("cors");
 const express = require("express");
 const uuid = require("uuid/v4");
 const config = require("./config");
-const stripe = require("stripe")(config.SECRET_LIVE_KEY);
+const stripe = require("stripe")(config.SECRET_TEST_KEY);
 
 const app = express();
 
@@ -18,7 +18,7 @@ app.post("/checkout", async (req, res) => {
   try {
     const {
       productName,
-      productPrice,
+      salePrice,
       productSize,
       productType,
       token
@@ -32,7 +32,7 @@ app.post("/checkout", async (req, res) => {
     const idempotency_key = uuid();
     const charge = await stripe.charges.create(
       {
-        amount: productPrice * 100,
+        amount: salePrice * 100,
         currency: "usd",
         customer: customer.id,
         receipt_email: token.email,
