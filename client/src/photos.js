@@ -3,6 +3,22 @@ const uuid = require("uuid/v4");
 const photos = [
   {
     id: uuid(),
+    name: "Frosty Tetons",
+    src: "https://lcwphotos.imgix.net/FrostyTetons.jpg",
+    orientation: "landscape",
+    width: 4,
+    height: 3
+  },
+  {
+    id: uuid(),
+    name: "Lone Bison",
+    src: "https://lcwphotos.imgix.net/LoneBison.jpg",
+    orientation: "landscape",
+    width: 3,
+    height: 4
+  },
+  {
+    id: uuid(),
     name: "Mountain Tops & Aspen Groves",
     src: "https://lcwphotos.imgix.net/MountainTops&AspenGroves.jpg",
     orientation: "landscape",
