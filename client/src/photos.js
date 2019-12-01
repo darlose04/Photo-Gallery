@@ -14,7 +14,7 @@ const photos = [
     name: "Lone Bison",
     src: "https://lcwphotos.imgix.net/LoneBison.jpg",
     orientation: "landscape",
-    width: 4,
+    width: 3,
     height: 3
   },
   {
