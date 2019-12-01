@@ -14,8 +14,8 @@ const photos = [
     name: "Lone Bison",
     src: "https://lcwphotos.imgix.net/LoneBison.jpg",
     orientation: "landscape",
-    width: 3,
-    height: 4
+    width: 4,
+    height: 3
   },
   {
     id: uuid(),
