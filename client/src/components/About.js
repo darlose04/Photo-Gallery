@@ -15,7 +15,7 @@ const About = () => {
           <div className="col-md-6">
             <img
               className="header rounded float-left mt-4 ml-2 mb-3"
-              src="https://lcwphotos.imgix.net/FullSizeRender.jpg"
+              src="https://lcwcompressed.imgix.net/FullSizeRender.jpg"
               alt="headshot"
             />
           </div>

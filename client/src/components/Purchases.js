@@ -62,7 +62,7 @@ const styles = [
 
 const Purchases = ({ photos }) => {
   const [source, setSource] = useState(
-    "https://lcwphotos.imgix.net/CottonCandySunrise.jpg"
+    "https://lcwcompressed.imgix.net/CottonCandySunrise.jpg"
   );
   const [productName, setProductName] = useState("");
   const [productDetails, setProductDetails] = useState("$25.00");
@@ -91,7 +91,7 @@ const Purchases = ({ photos }) => {
   const photoChange = event => {
     setProductName(event.target.value);
     setSource(
-      `https://lcwphotos.imgix.net/${event.target.value
+      `https://lcwcompressed.imgix.net/${event.target.value
         .split(" ")
         .join("")}.jpg`
     );
