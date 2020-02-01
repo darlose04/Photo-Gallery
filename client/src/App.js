@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles/App.css";
+import axios from "axios";
 
 import Navbar from "./components/layout/Navbar";
 // import Footer from "./components/layout/Footer";
@@ -9,14 +10,16 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import AllPictures from "./components/photopages/AllPictures";
 import Purchases from "./components/Purchases";
-import photos from "./photos";
+// import photos from "./photos";
 
 const App = () => {
-  // const [images, setImages] = useState([]);
+  const [photos, setPhotos] = useState([]);
   const [show, setShow] = useState(false);
   // const [showModal, setShowModal] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
+
+  const getPhotos = async () => {};
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
