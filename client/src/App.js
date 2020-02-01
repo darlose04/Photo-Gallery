@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles/App.css";
 import axios from "axios";
@@ -19,7 +19,30 @@ const App = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-  const getPhotos = async () => {};
+  const getPhotos = async () => {
+    const res = await axios.get(
+      "https://lcwphotography.herokuapp.com/images/files"
+    );
+
+    let photoArr = [];
+
+    for (var i = 0; i < res.data.length; i++) {
+      let newObj = {
+        id: res.data[i]._id,
+        name: res.data[i].title,
+        src: `https://lcwphotography.herokuapp.com/images/image/${res.data[i].file.filename}`,
+        width: res.data[i].width,
+        height: res.data[i].height
+      };
+
+      photoArr.push(newObj);
+    }
+    setPhotos(photoArr);
+  };
+
+  useEffect(() => {
+    getPhotos();
+  });
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
