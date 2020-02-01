@@ -35,7 +35,7 @@ const App = () => {
         height: res.data[i].height
       };
 
-      photoArr.push(newObj);
+      photoArr.unshift(newObj);
     }
 
     setPhotos(photoArr);
