@@ -37,12 +37,13 @@ const App = () => {
 
       photoArr.push(newObj);
     }
+
     setPhotos(photoArr);
   };
 
   useEffect(() => {
     getPhotos();
-  });
+  }, []);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
