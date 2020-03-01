@@ -22,6 +22,7 @@ const App = () => {
   const getPhotos = async () => {
     const res = await axios.get(
       "https://lcwphotography.herokuapp.com/images/files"
+      // "http://localhost:3003/images/files"
     );
 
     let photoArr = [];
