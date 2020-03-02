@@ -62,7 +62,7 @@ const styles = [
 
 const Purchases = ({ photos }) => {
   const [source, setSource] = useState(
-    "https://lcwcompressed.imgix.net/CottonCandySunrise.jpg"
+    "https://lcwphotography.herokuapp.com/images/image/CottonCandySunrise.jpg"
   );
   const [productName, setProductName] = useState("");
   const [productDetails, setProductDetails] = useState("$25.00");
@@ -91,7 +91,7 @@ const Purchases = ({ photos }) => {
   const photoChange = event => {
     setProductName(event.target.value);
     setSource(
-      `https://lcwcompressed.imgix.net/${event.target.value
+      `https://lcwphotography.herokuapp.com/images/image/${event.target.value
         .split(" ")
         .join("")}.jpg`
     );
