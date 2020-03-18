@@ -102,6 +102,7 @@ const Purchases = ({ photos }) => {
   };
 
   let productPrice = parseInt(productDetails.split(",")[2]);
+  let salePrice = productPrice * 0.8;
   let productSize = productDetails.split(",")[0];
   let productType = productDetails.split(",")[1];
 
@@ -112,6 +113,7 @@ const Purchases = ({ photos }) => {
         token,
         productName,
         productPrice,
+        salePrice,
         productSize,
         productType
       }
@@ -136,6 +138,9 @@ const Purchases = ({ photos }) => {
               <h2 className="card-title card-about">
                 Photo Selection & Purchase
               </h2>
+              <div className="alert alert-success text-uppercase">
+                Spring 2020 Sale! 20% off through March 29th!
+              </div>
               <p className="card-text">Free shipping to the United States</p>
               <form>
                 <label className="card-text">Photos</label>
@@ -172,11 +177,11 @@ const Purchases = ({ photos }) => {
                   token={handleToken}
                   billingAddress
                   shippingAddress
-                  amount={productPrice * 100}
+                  amount={salePrice * 100}
                   name={productName}
                 >
                   <button type="submit" className="btn btn-success btn-block">
-                    Purchase for ${productPrice}
+                    Purchase for <del>${productPrice}</del> ${salePrice}
                   </button>
                 </StripeCheckout>
               )}
