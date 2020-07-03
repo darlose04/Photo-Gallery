@@ -4,7 +4,8 @@ import "../styles/Home.css";
 const Home = () => {
   return (
     <div>
-      <ul className='slideshow'>
+      <ul className="slideshow">
+        <li></li>
         <li></li>
         <li></li>
         <li></li>
