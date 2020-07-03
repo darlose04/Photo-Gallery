@@ -1,5 +1,6 @@
 body {
-  background-image: url("https://lcwphotography.herokuapp.com/images/image/DesertedRailroad.jpg");
+  /* background-image: url("https://lcwphotography.herokuapp.com/images/image/DesertedRailroad.jpg"); */
+  background-image: url("../photos/DesertedRailroad.jpg");
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
 }
