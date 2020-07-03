@@ -33,7 +33,7 @@ const App = () => {
         name: res.data[i].title,
         src: `https://lcwphotography.herokuapp.com/images/image/${res.data[i].file.filename}`,
         width: res.data[i].width,
-        height: res.data[i].height
+        height: res.data[i].height,
       };
 
       photoArr.unshift(newObj);
@@ -69,7 +69,7 @@ const App = () => {
             <Route
               exact
               path="/portfolio"
-              render={props => (
+              render={(props) => (
                 <AllPictures
                   photos={photos}
                   openLightbox={openLightbox}
@@ -83,7 +83,7 @@ const App = () => {
             <Route
               exact
               path="/purchases"
-              render={props => <Purchases photos={photos} />}
+              render={(props) => <Purchases photos={photos} />}
             />
             <Route exact path="/contact" component={Contact} />
           </Switch>

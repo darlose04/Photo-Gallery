@@ -4,7 +4,7 @@ const Information = () => {
   const purchasesStyle = {
     maxWidth: 1100,
     backgroundColor: "rgba(0,0,0,0.8)",
-    fontSize: "1.1rem"
+    fontSize: "1.1rem",
   };
 
   return (
