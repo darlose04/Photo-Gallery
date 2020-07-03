@@ -1,11 +1,12 @@
 import React from "react";
 import "../styles/About.css";
+import Headshot from "../photos/FullSizeRender.jpg";
 
 const About = () => {
   const cardStyle = {
     maxWidth: 1100,
     backgroundColor: "rgba(0,0,0,0.8)",
-    fontSize: "1.02rem"
+    fontSize: "1.02rem",
   };
 
   return (
@@ -15,7 +16,7 @@ const About = () => {
           <div className="col-md-6">
             <img
               className="header rounded float-left mt-4 ml-2 mb-3"
-              src="https://lcwcompressed.imgix.net/FullSizeRender.jpg"
+              src={Headshot}
               alt="headshot"
             />
           </div>
