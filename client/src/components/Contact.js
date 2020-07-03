@@ -2,11 +2,11 @@ import React from "react";
 
 const Contact = ({ handleClose, handleShow }) => {
   const ulStyle = {
-    listStyle: "none"
+    listStyle: "none",
   };
 
   const aStyle = {
-    color: "black"
+    color: "black",
   };
 
   return (
@@ -39,6 +39,8 @@ const Contact = ({ handleClose, handleShow }) => {
                 <li>loganwilsonphotography@gmail.com</li>
                 <li>
                   <a
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={aStyle}
                     href="https://www.instagram.com/loganwilsonphotography/"
                   >
@@ -47,10 +49,32 @@ const Contact = ({ handleClose, handleShow }) => {
                 </li>
                 <li>
                   <a
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={aStyle}
                     href="https://www.facebook.com/LoganWilsonPhoto/"
                   >
                     Facebook
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="modal-header">
+              <h4 className="modal-title" id="exampleModalLabel">
+                Contact the Developer
+              </h4>
+            </div>
+            <div className="modal-body">
+              <ul style={ulStyle}>
+                <li>zsmith126028@gmail.com</li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={aStyle}
+                    href="https://github.com/darlose04"
+                  >
+                    GitHub
                   </a>
                 </li>
               </ul>
