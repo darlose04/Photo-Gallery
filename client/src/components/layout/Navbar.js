@@ -48,6 +48,8 @@ const Navbar = ({ show, handleClose, handleShow }) => {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.instagram.com/loganwilsonphotography/"
                   className="nav-link"
                 >
@@ -56,6 +58,8 @@ const Navbar = ({ show, handleClose, handleShow }) => {
               </li>
               <li className="nav-item">
                 <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.facebook.com/LoganWilsonPhoto/"
                   className="nav-link"
                 >
