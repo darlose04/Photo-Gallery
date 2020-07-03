@@ -7,6 +7,7 @@
 /client.pnp.js
 /client/.netlify/
 .env
+/client/src/photos
 
 # testing
 /coverage
