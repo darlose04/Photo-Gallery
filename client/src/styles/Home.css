@@ -29,52 +29,60 @@
 }
 
 .slideshow li:nth-child(2) {
-  background-image: url("https://lcwphotography.herokuapp.com/images/image/WindowToTheWest.jpg");
+  background-image: url("https://lcwphotography.herokuapp.com/images/image/MesaSunburst.jpg");
   animation-delay: 10s;
 }
 
 .slideshow li:nth-child(3) {
-  background-image: url("https://lcwphotography.herokuapp.com/images/image/RusticBarn.jpg");
+  /* background-image: url("https://lcwphotography.herokuapp.com/images/image/RusticBarn.jpg"); */
+  background-image: url("../photos/RusticBarn.jpg");
   animation-delay: 20s;
 }
 
 .slideshow li:nth-child(4) {
-  background-image: url("https://lcwphotography.herokuapp.com/images/image/TheMajesticFlatirons.jpg");
+  /* background-image: url("https://lcwphotography.herokuapp.com/images/image/TheMajesticFlatirons.jpg"); */
+  background-image: url("../photos/TheMajesticFlatironsedit.jpg");
   animation-delay: 30s;
 }
 
 .slideshow li:nth-child(5) {
-  background-image: url("https://lcwphotography.herokuapp.com/images/image/TheHazyBellsedit.jpg");
+  /* background-image: url("https://lcwphotography.herokuapp.com/images/image/TheHazyBellsedit.jpg"); */
+  background-image: url("../photos/TheWindowtotheWest.jpg");
   animation-delay: 40s;
 }
 
 @media screen and (max-width: 500px) {
   body {
-    background-image: url("https://lcwphotography.herokuapp.com/images/image/SnakeRiverOverlook.jpg");
+    /* background-image: url("https://lcwphotography.herokuapp.com/images/image/SnakeRiverOverlook.jpg"); */
+    background-image: url("../photos/SnakeRiverOverlook.jpg");
     background-size: cover;
   }
 
   .slideshow li:nth-child(1) {
-    background-image: url("https://lcwphotography.herokuapp.com/images/image/TheUpsideDown.jpg");
+    /* background-image: url("https://lcwphotography.herokuapp.com/images/image/TheUpsideDown.jpg"); */
+    background-image: url("../photos/TheUpsideDown.jpg");
   }
 
   .slideshow li:nth-child(2) {
-    background-image: url("https://lcwphotography.herokuapp.com/images/image/EyetoEye.jpg");
+    /* background-image: url("https://lcwphotography.herokuapp.com/images/image/EyetoEye.jpg"); */
+    background-image: url("../photos/EyetoEye.jpg");
     animation-delay: 10s;
   }
 
   .slideshow li:nth-child(3) {
-    background-image: url("https://lcwphotography.herokuapp.com/images/image/LastLight.jpg");
+    /* background-image: url("https://lcwphotography.herokuapp.com/images/image/LastLight.jpg"); */
+    background-image: url("../photos/LastLight.jpg");
     animation-delay: 20s;
   }
 
   .slideshow li:nth-child(4) {
-    background-image: url("https://lcwphotography.herokuapp.com/images/image/SnakeRiverOverlook.jpg");
+    background-image: url("https://lcwphotography.herokuapp.com/images/image/IfTheseWallsCouldTalk.jpg");
     animation-delay: 30s;
   }
 
   .slideshow li:nth-child(5) {
-    background-image: url("https://lcwphotography.herokuapp.com/images/image/ArchwaytotheWest.jpg");
+    /* background-image: url("https://lcwphotography.herokuapp.com/images/image/ArchwaytotheWest.jpg"); */
+    background-image: url("../photos/ArchwaytotheWest.jpg");
     animation-delay: 40s;
   }
 }
