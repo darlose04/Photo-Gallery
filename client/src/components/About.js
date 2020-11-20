@@ -33,7 +33,7 @@ const About = () => {
                 complained while posing for the thousandth picture on one of our
                 childhood vacations. As I got older though, I began to
                 appreciate what my dad did and why he did it. Capturing a moment
-                is something special. Even the best of memories will ade with
+                is something special. Even the best of memories will fade with
                 age, but a picture can spark that memory and bring back all the
                 feelings that come with it. There is nothing more magical than
                 freezing a moment in time and being able to keep it forever.
