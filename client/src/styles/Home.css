@@ -24,32 +24,32 @@
   animation: imageAnimation 50s linear infinite;
 }
 
-/* .slideshow li:nth-child(1) {
-  background-image: url("https://lcwphotography.herokuapp.com/images/image/CottonCandySunrise.jpg");
+.slideshow li:nth-child(1) {
+  background-image: url("https://lcwphotography.herokuapp.com/images/image/TetonGlow.jpg");
 }
 
 .slideshow li:nth-child(2) {
   background-image: url("https://lcwphotography.herokuapp.com/images/image/MesaSunburst.jpg");
   animation-delay: 10s;
-} */
-/* 
-.slideshow li:nth-child(3) {
-  background-image: url("https://lcwphotography.herokuapp.com/images/image/RusticBarn.jpg");
-  background-image: url("../photos/RusticBarn.jpg");
-  animation-delay: 20s;
-} */
+}
 
-/* .slideshow li:nth-child(4) {
-  background-image: url("https://lcwphotography.herokuapp.com/images/image/TheMajesticFlatirons.jpg");
+.slideshow li:nth-child(3) {
+  background-image: url("https://lcwphotography.herokuapp.com/images/image/SchwabacherSunrise.jpg");
+  /* background-image: url("../photos/RusticBarn.jpg"); */
+  animation-delay: 20s;
+}
+
+.slideshow li:nth-child(4) {
+  /* background-image: url("https://lcwphotography.herokuapp.com/images/image/TheMajesticFlatirons.jpg"); */
   background-image: url("../photos/TheMajesticFlatironsedit.jpg");
   animation-delay: 30s;
-} */
+}
 
-/* .slideshow li:nth-child(5) {
-  background-image: url("https://lcwphotography.herokuapp.com/images/image/TetonGlow.jpg");
-  background-image: url("../photos/TheWindowtotheWest.jpg");
+.slideshow li:nth-child(5) {
+  background-image: url("https://lcwphotography.herokuapp.com/images/image/CottonCandySunrise.jpg");
+  /* background-image: url("../photos/TheWindowtotheWest.jpg"); */
   animation-delay: 40s;
-} */
+}
 
 @media screen and (max-width: 500px) {
   body {
