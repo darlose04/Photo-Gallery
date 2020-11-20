@@ -82,7 +82,10 @@ const Purchases = ({ photos }) => {
 
   const styleSelection = () => {
     return styles.map((style) => (
-      <option key={style.id} value={[style.size, style.type, style.price]}>
+      <option
+        key={style.id}
+        value={[style.size, style.type, style.price, style.sale]}
+      >
         {`${style.size} ${style.type} $${style.price}`}
       </option>
     ));
@@ -181,7 +184,8 @@ const Purchases = ({ photos }) => {
                   name={productName}
                 >
                   <button type="submit" className="btn btn-success btn-block">
-                    Purchase for ${productPrice}
+                    {/* Purchase for ${productPrice} */}
+                    Purchase for <del>${productPrice}</del> ${salePrice}
                   </button>
                 </StripeCheckout>
               )}
