@@ -24,54 +24,58 @@
   animation: imageAnimation 50s linear infinite;
 }
 
-.slideshow li:nth-child(1) {
+/* .slideshow li:nth-child(1) {
   background-image: url("https://lcwphotography.herokuapp.com/images/image/CottonCandySunrise.jpg");
 }
 
 .slideshow li:nth-child(2) {
   background-image: url("https://lcwphotography.herokuapp.com/images/image/MesaSunburst.jpg");
   animation-delay: 10s;
-}
-
+} */
+/* 
 .slideshow li:nth-child(3) {
-  /* background-image: url("https://lcwphotography.herokuapp.com/images/image/RusticBarn.jpg"); */
+  background-image: url("https://lcwphotography.herokuapp.com/images/image/RusticBarn.jpg");
   background-image: url("../photos/RusticBarn.jpg");
   animation-delay: 20s;
-}
+} */
 
-.slideshow li:nth-child(4) {
-  /* background-image: url("https://lcwphotography.herokuapp.com/images/image/TheMajesticFlatirons.jpg"); */
+/* .slideshow li:nth-child(4) {
+  background-image: url("https://lcwphotography.herokuapp.com/images/image/TheMajesticFlatirons.jpg");
   background-image: url("../photos/TheMajesticFlatironsedit.jpg");
   animation-delay: 30s;
-}
+} */
 
-.slideshow li:nth-child(5) {
-  /* background-image: url("https://lcwphotography.herokuapp.com/images/image/TheHazyBellsedit.jpg"); */
+/* .slideshow li:nth-child(5) {
+  background-image: url("https://lcwphotography.herokuapp.com/images/image/TetonGlow.jpg");
   background-image: url("../photos/TheWindowtotheWest.jpg");
   animation-delay: 40s;
-}
+} */
 
 @media screen and (max-width: 500px) {
   body {
-    /* background-image: url("https://lcwphotography.herokuapp.com/images/image/SnakeRiverOverlook.jpg"); */
-    background-image: url("../photos/SnakeRiverOverlook.jpg");
+    background: url("https://lcwphotography.herokuapp.com/images/image/AutumnalReflections.jpg")
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
   }
 
   .slideshow li:nth-child(1) {
-    /* background-image: url("https://lcwphotography.herokuapp.com/images/image/TheUpsideDown.jpg"); */
-    background-image: url("../photos/TheUpsideDown.jpg");
+    background-image: url("https://lcwphotography.herokuapp.com/images/image/CrystalMill.jpg");
+    /* background-image: url("../photos/TheUpsideDown.jpg"); */
   }
 
   .slideshow li:nth-child(2) {
-    /* background-image: url("https://lcwphotography.herokuapp.com/images/image/EyetoEye.jpg"); */
-    background-image: url("../photos/EyetoEye.jpg");
+    background-image: url("https://lcwphotography.herokuapp.com/images/image/SnowyBison.jpg");
+    /* background-image: url("../photos/EyetoEye.jpg"); */
+    background-size: cover;
     animation-delay: 10s;
   }
 
   .slideshow li:nth-child(3) {
-    /* background-image: url("https://lcwphotography.herokuapp.com/images/image/LastLight.jpg"); */
-    background-image: url("../photos/LastLight.jpg");
+    background-image: url("https://lcwphotography.herokuapp.com/images/image/AutumnalReflections.jpg");
+    /* background-image: url("../photos/LastLight.jpg"); */
     animation-delay: 20s;
   }
 
@@ -81,8 +85,8 @@
   }
 
   .slideshow li:nth-child(5) {
-    /* background-image: url("https://lcwphotography.herokuapp.com/images/image/ArchwaytotheWest.jpg"); */
-    background-image: url("../photos/ArchwaytotheWest.jpg");
+    background-image: url("https://lcwphotography.herokuapp.com/images/image/FireArch.jpg");
+    /* background-image: url("../photos/ArchwaytotheWest.jpg"); */
     animation-delay: 40s;
   }
 }
