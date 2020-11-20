@@ -139,7 +139,7 @@ const Purchases = ({ photos }) => {
                 Photo Selection & Purchase
               </h2>
               <div className="alert alert-success text-uppercase">
-                Spring 2020 Sale! 20% off through March 29th!
+                BLACK FRIDAY SALE! 20% off thru November 30th!
               </div>
               <p className="card-text">Free shipping to the United States</p>
               <form>
