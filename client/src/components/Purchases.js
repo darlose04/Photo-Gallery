@@ -7,57 +7,57 @@ const styles = [
   {
     id: 1,
     type: "Fine Art Print",
-    size: "8x12",
-    price: 25.0
+    size: "8x10",
+    price: 25.0,
   },
   {
     id: 2,
     type: "Metal Print",
-    size: "8x12",
-    price: 75.0
+    size: "8x10",
+    price: 70.0,
   },
   {
     id: 3,
     type: "Fine Art Print",
     size: "11x14",
-    price: 35.0
+    price: 35.0,
   },
   {
     id: 4,
     type: "Canvas Print",
     size: "11x14",
-    price: 65.0
+    price: 65.0,
   },
   {
     id: 5,
     type: "Metal Print",
     size: "11x14",
-    price: 105.0
+    price: 105.0,
   },
   {
     id: 6,
     type: "Fine Art Print",
     size: "16x20",
-    price: 60.0
+    price: 60.0,
   },
   {
     id: 7,
     type: "Canvas Print",
     size: "16x20",
-    price: 80.0
+    price: 80.0,
   },
   {
     id: 8,
     type: "Metal Print",
     size: "16x20",
-    price: 185.0
+    price: 185.0,
   },
   {
     id: 9,
     type: "Canvas Print",
     size: "24x36",
-    price: 150.0
-  }
+    price: 150.0,
+  },
 ];
 
 const Purchases = ({ photos }) => {
@@ -69,11 +69,11 @@ const Purchases = ({ photos }) => {
 
   const purchasesStyle = {
     maxWidth: 1100,
-    backgroundColor: "rgba(0,0,0,0.8)"
+    backgroundColor: "rgba(0,0,0,0.8)",
   };
 
   const photoSelection = () => {
-    return photos.map(photo => (
+    return photos.map((photo) => (
       <option className="photoName" key={photo.id} value={photo.name}>
         {photo.name}
       </option>
@@ -81,14 +81,14 @@ const Purchases = ({ photos }) => {
   };
 
   const styleSelection = () => {
-    return styles.map(style => (
+    return styles.map((style) => (
       <option key={style.id} value={[style.size, style.type, style.price]}>
         {`${style.size} ${style.type} $${style.price}`}
       </option>
     ));
   };
 
-  const photoChange = event => {
+  const photoChange = (event) => {
     setProductName(event.target.value);
     setSource(
       `https://lcwphotography.herokuapp.com/images/image/${event.target.value
@@ -97,12 +97,12 @@ const Purchases = ({ photos }) => {
     );
   };
 
-  const styleChange = event => {
+  const styleChange = (event) => {
     setProductDetails(event.target.value);
   };
 
   let productPrice = parseInt(productDetails.split(",")[2]);
-  // let salePrice = productPrice * 0.8;
+  let salePrice = productPrice * 0.8;
   let productSize = productDetails.split(",")[0];
   let productType = productDetails.split(",")[1];
 
@@ -112,9 +112,10 @@ const Purchases = ({ photos }) => {
       {
         token,
         productName,
-        productPrice,
+        // productPrice,
+        salePrice,
         productSize,
-        productType
+        productType,
       }
     );
 
@@ -137,9 +138,9 @@ const Purchases = ({ photos }) => {
               <h2 className="card-title card-about">
                 Photo Selection & Purchase
               </h2>
-              {/* <div className="alert alert-success text-uppercase">
+              <div className="alert alert-success text-uppercase">
                 Spring 2020 Sale! 20% off through March 29th!
-              </div> */}
+              </div>
               <p className="card-text">Free shipping to the United States</p>
               <form>
                 <label className="card-text">Photos</label>
@@ -176,7 +177,7 @@ const Purchases = ({ photos }) => {
                   token={handleToken}
                   billingAddress
                   shippingAddress
-                  amount={productPrice * 100}
+                  amount={salePrice * 100}
                   name={productName}
                 >
                   <button type="submit" className="btn btn-success btn-block">
