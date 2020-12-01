@@ -105,7 +105,7 @@ const Purchases = ({ photos }) => {
   };
 
   let productPrice = parseInt(productDetails.split(",")[2]);
-  let salePrice = productPrice * 0.8;
+  // let salePrice = productPrice * 0.8;
   let productSize = productDetails.split(",")[0];
   let productType = productDetails.split(",")[1];
 
@@ -115,8 +115,8 @@ const Purchases = ({ photos }) => {
       {
         token,
         productName,
-        // productPrice,
-        salePrice,
+        productPrice,
+        // salePrice,
         productSize,
         productType,
       }
@@ -141,9 +141,9 @@ const Purchases = ({ photos }) => {
               <h2 className="card-title card-about">
                 Photo Selection & Purchase
               </h2>
-              <div className="alert alert-success text-uppercase">
+              {/* <div className="alert alert-success text-uppercase">
                 BLACK FRIDAY SALE! 20% off thru November 30th!
-              </div>
+              </div> */}
               <p className="card-text">Free shipping to the United States</p>
               <form>
                 <label className="card-text">Photos</label>
@@ -180,12 +180,12 @@ const Purchases = ({ photos }) => {
                   token={handleToken}
                   billingAddress
                   shippingAddress
-                  amount={salePrice * 100}
+                  amount={productPrice * 100}
                   name={productName}
                 >
                   <button type="submit" className="btn btn-success btn-block">
-                    {/* Purchase for ${productPrice} */}
-                    Purchase for <del>${productPrice}</del> ${salePrice}
+                    Purchase for ${productPrice}
+                    {/* Purchase for <del>${productPrice}</del> ${salePrice} */}
                   </button>
                 </StripeCheckout>
               )}
