@@ -29,7 +29,9 @@ const Calendar = ({ purchasesStyle }) => {
             <h3 className="card-title card-about">
               Logan Wilson Photography Calendar
             </h3>
-            <p className="card-text text-center">(Limited Availability)</p>
+            <p className="card-text text-center">
+              (8.5x11, Limited Availability)
+            </p>
             <img
               className="header rounded float-right mt-3 mr-2 mb-3"
               src={calendar}
