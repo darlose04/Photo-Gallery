@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
 
@@ -77,6 +77,38 @@ const PhotoSelection = ({ photos }) => {
         {photo.name}
       </option>
     ));
+  };
+
+  const styleChange = (event) => {
+    setProductDetails(event.target.value);
+  };
+
+  let productPrice = parseInt(productDetails.split(",")[2]);
+  // let salePrice = productPrice * 0.8;
+  let productSize = productDetails.split(",")[0];
+  let productType = productDetails.split(",")[1];
+
+  const handleToken = async (token, addresses) => {
+    const response = await axios.post(
+      "https://logancwilsonphotography.herokuapp.com/checkout",
+      {
+        token,
+        productName,
+        productPrice,
+        // salePrice,
+        productSize,
+        productType,
+      }
+    );
+
+    const status = response.data;
+    // console.log(status.status);
+
+    if (status.status === "success") {
+      alert("Purchase Complete! Check your email for details");
+    } else {
+      alert("Something went wrong");
+    }
   };
 
   return (
