@@ -1,10 +1,12 @@
 import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
+import calendar from "../photos/LCWCalendar.jpg";
 
 const Calendar = ({ purchasesStyle }) => {
   let productPrice = 25;
-  let productName = "Calendar";
+  let productName = "Logan Wilson Photography Calendar";
+  let productType = "Calendar";
 
   const handleToken = async (token, addresses) => {
     const response = await axios.post(
@@ -13,6 +15,7 @@ const Calendar = ({ purchasesStyle }) => {
         token,
         productName,
         productPrice,
+        productType,
       }
     );
   };
@@ -20,9 +23,17 @@ const Calendar = ({ purchasesStyle }) => {
   return (
     <div className="card about pr-2" style={purchasesStyle}>
       <div className="row no-gutters">
+        <div className="col-md-3"></div>
         <div className="col-md-6">
           <div className="card-body">
-            <h2 className="card-title card-about">Calendar Purchase</h2>
+            <h3 className="card-title card-about">
+              Logan Wilson Photography Calendar
+            </h3>
+            <img
+              className="header rounded float-right mt-3 mr-2 mb-3"
+              src={calendar}
+              alt="Calendar"
+            />
             <p className="card-text">Free shipping to the United States</p>
             <StripeCheckout
               stripeKey="pk_live_NfUn28zVGn82Y5WW2exzyyRw00ygY2yGyI"
@@ -38,13 +49,7 @@ const Calendar = ({ purchasesStyle }) => {
             </StripeCheckout>
           </div>
         </div>
-        <div className="col-md-6">
-          <img
-            className="header rounded float-right mt-3 mr-2 mb-3"
-            src="../photos/LCWCalendar.jpg"
-            alt=""
-          />
-        </div>
+        <div className="col-md-3"></div>
       </div>
     </div>
   );
