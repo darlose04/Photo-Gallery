@@ -59,17 +59,12 @@ const styles = [
   },
 ];
 
-const PhotoSelection = ({ photos }) => {
+const PhotoSelection = ({ photos, purchasesStyle }) => {
   const [source, setSource] = useState(
     "https://lcwphotography.herokuapp.com/images/image/CottonCandySunrise.jpg"
   );
   const [productName, setProductName] = useState("");
   const [productDetails, setProductDetails] = useState("$25.00");
-
-  const purchasesStyle = {
-    maxWidth: 1100,
-    backgroundColor: "rgba(0,0,0,0.8)",
-  };
 
   const photoSelection = () => {
     return photos.map((photo) => (
