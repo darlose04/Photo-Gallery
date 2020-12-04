@@ -17,10 +17,14 @@ const Purchases = ({ photos }) => {
 
   return (
     <div className="container mb-5">
-      <div className="card about pr-2" style={purchasesStyle}>
+      <div className="card about pr-2 mb-3" style={purchasesStyle}>
         <div className="row no-gutters">
-          <button>Purchase Photo Prints</button>
-          <button>Purchase Calendar</button>
+          <button className="btn btn-light " onClick={purchaseSelectionChange}>
+            Purchase Photo Prints
+          </button>
+          <button className="btn btn-light" onClick={purchaseSelectionChange}>
+            Purchase Calendar
+          </button>
         </div>
       </div>
 
