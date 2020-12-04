@@ -37,12 +37,12 @@ const Purchases = ({ photos }) => {
           </div>
         </div>
       </div>
-      {purchaseSelection == "Purchase Photo Prints" ? (
+      {purchaseSelection === "Purchase Photo Prints" ? (
         <PhotoSelection photos={photos} purchasesStyle={purchasesStyle} />
       ) : (
         <div></div>
       )}
-      {purchaseSelection == "Purchase Calendar" ? (
+      {purchaseSelection === "Purchase Calendar" ? (
         <Calendar purchasesStyle={purchasesStyle} />
       ) : (
         <div></div>
