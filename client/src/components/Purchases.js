@@ -17,7 +17,7 @@ const Purchases = ({ photos }) => {
 
   return (
     <div className="container mb-5">
-      <div className="card about pr-2 p-2 mb-3" style={purchasesStyle}>
+      <div className="card about pr-2 p-2 mb-2" style={purchasesStyle}>
         <div className="row no-gutters">
           <div className="col-md-12">
             <div className="text-center">
@@ -37,8 +37,17 @@ const Purchases = ({ photos }) => {
           </div>
         </div>
       </div>
+      {purchaseSelection == "Purchase Photo Prints" ? (
+        <PhotoSelection photos={photos} purchasesStyle={purchasesStyle} />
+      ) : (
+        <div></div>
+      )}
+      {purchaseSelection == "Purchase Calendar" ? (
+        <Calendar purchasesStyle={purchasesStyle} />
+      ) : (
+        <div></div>
+      )}
 
-      <PhotoSelection photos={photos} purchasesStyle={purchasesStyle} />
       <Information />
     </div>
   );
