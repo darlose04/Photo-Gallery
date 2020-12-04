@@ -4,7 +4,7 @@ import axios from "axios";
 import calendar from "../photos/LCWCalendar.jpg";
 
 const Calendar = ({ purchasesStyle }) => {
-  let productPrice = 25;
+  let productPrice = 25.0;
   let productName = "Logan Wilson Photography Calendar";
   let productType = "Calendar";
 
