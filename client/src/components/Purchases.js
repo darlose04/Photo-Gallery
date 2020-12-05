@@ -161,10 +161,10 @@ const Purchases = ({ photos }) => {
               <h2 className="card-title card-about">
                 Photo Selection & Purchase
               </h2>
-              {/* <div className="alert alert-success text-uppercase">
-                Limited number of calendars also available under photo
-                selection!
-              </div> */}
+              <div className="alert alert-danger">
+                The payment system is currently unavailable. We apologize for
+                any inconvenience as we work to solve the problem.
+              </div>
               <p className="card-text">Free shipping to the United States</p>
               <form>
                 <label className="card-text">Photos</label>
