@@ -40,11 +40,11 @@ const App = () => {
       photoArr.unshift(newObj);
     }
 
-    photoArr.push({
-      id: "1234567890",
-      name: "Logan Wilson Photography Calendar",
-      src: calendar,
-    });
+    // photoArr.push({
+    //   id: "1234567890",
+    //   name: "Logan Wilson Photography Calendar",
+    //   src: calendar,
+    // });
 
     setPhotos(photoArr);
   };

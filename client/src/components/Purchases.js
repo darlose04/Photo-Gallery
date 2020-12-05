@@ -61,12 +61,12 @@ const styles = [
     size: "24x36",
     price: 150.0,
   },
-  {
-    id: 10,
-    type: "Calendar",
-    size: "8.5x11 (Only for calendars!)",
-    price: 25.0,
-  },
+  // {
+  //   id: 10,
+  //   type: "Calendar",
+  //   size: "8.5x11 (Only for calendars!)",
+  //   price: 25.0,
+  // },
 ];
 
 const Purchases = ({ photos }) => {
@@ -161,10 +161,10 @@ const Purchases = ({ photos }) => {
               <h2 className="card-title card-about">
                 Photo Selection & Purchase
               </h2>
-              <div className="alert alert-success text-uppercase">
+              {/* <div className="alert alert-success text-uppercase">
                 Limited number of calendars also available under photo
                 selection!
-              </div>
+              </div> */}
               <p className="card-text">Free shipping to the United States</p>
               <form>
                 <label className="card-text">Photos</label>
