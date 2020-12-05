@@ -7,6 +7,7 @@ const Calendar = ({ purchasesStyle }) => {
   let productPrice = 25.0;
   let productName = "Logan Wilson Photography Calendar";
   let productType = "Calendar";
+  let productSize = "8.5x11";
 
   const handleToken = async (token, addresses) => {
     const response = await axios.post(
@@ -15,6 +16,7 @@ const Calendar = ({ purchasesStyle }) => {
         token,
         productName,
         productPrice,
+        productSize,
         productType,
       }
     );
