@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
 import calendar from "../photos/LCWCalendar.jpg";
@@ -70,3 +70,4 @@ const Calendar = ({ purchasesStyle }) => {
 };
 
 export default Calendar;
+*/

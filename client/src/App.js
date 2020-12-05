@@ -11,7 +11,7 @@ import Contact from "./components/Contact";
 import AllPictures from "./components/photopages/AllPictures";
 import Purchases from "./components/Purchases";
 // import photos from "./photos";
-import calendar from "./photos/LCWCalendar.jpg";
+// import calendar from "./photos/LCWCalendar.jpg";
 
 const App = () => {
   const [photos, setPhotos] = useState([]);
