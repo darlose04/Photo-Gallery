@@ -163,9 +163,10 @@ const Purchases = ({ photos }) => {
               <h2 className="card-title card-about">
                 Photo Selection & Purchase
               </h2>
-              <div className="alert alert-danger">
-                The payment system is currently unavailable. We apologize for
-                any inconvenience as we work to solve the problem.
+              <div className="alert alert-success">
+                A limited number of calendars are available for purchase and can
+                be selected from the Photos dropdown list. Make sure to select
+                the 8.5x11 Calendar option under the Style dropdown.
               </div>
               <p className="card-text">Free shipping to the United States</p>
               <form>
