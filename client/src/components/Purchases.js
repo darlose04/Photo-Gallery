@@ -128,8 +128,8 @@ const Purchases = ({ photos }) => {
 
   const handleToken = async (token, addresses) => {
     const response = await axios.post(
-      // "https://logancwilsonphotography.herokuapp.com/checkout",
-      "http://localhost:5000/checkout",
+      "https://logancwilsonphotography.herokuapp.com/checkout",
+      // "http://localhost:5000/checkout",
       {
         token,
         productName,
@@ -198,21 +198,8 @@ const Purchases = ({ photos }) => {
               {isNaN(productPrice) ? (
                 <p className="text-white">Please select a photo and a style</p>
               ) : (
-                <StripeCheckout
-                  stripeKey="pk_test_KYo2T9oUQDIpMwuNYJjCm9x200WhGiUReK"
-                  token={handleToken}
-                  billingAddress
-                  shippingAddress
-                  amount={productPrice * 100}
-                  name={productName}
-                >
-                  <button type="submit" className="btn btn-success btn-block">
-                    Purchase for ${productPrice}
-                    {/* Purchase for <del>${productPrice}</del> ${salePrice} */}
-                  </button>
-                </StripeCheckout>
                 // <StripeCheckout
-                //   stripeKey="pk_live_NfUn28zVGn82Y5WW2exzyyRw00ygY2yGyI"
+                //   stripeKey="pk_test_KYo2T9oUQDIpMwuNYJjCm9x200WhGiUReK"
                 //   token={handleToken}
                 //   billingAddress
                 //   shippingAddress
@@ -224,6 +211,19 @@ const Purchases = ({ photos }) => {
                 //     {/* Purchase for <del>${productPrice}</del> ${salePrice} */}
                 //   </button>
                 // </StripeCheckout>
+                <StripeCheckout
+                  stripeKey="pk_live_NfUn28zVGn82Y5WW2exzyyRw00ygY2yGyI"
+                  token={handleToken}
+                  billingAddress
+                  shippingAddress
+                  amount={productPrice * 100}
+                  name={productName}
+                >
+                  <button type="submit" className="btn btn-success btn-block">
+                    Purchase for ${productPrice}
+                    {/* Purchase for <del>${productPrice}</del> ${salePrice} */}
+                  </button>
+                </StripeCheckout>
               )}
             </div>
           </div>
