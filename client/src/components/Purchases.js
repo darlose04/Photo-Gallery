@@ -5,8 +5,6 @@ import StripeCheckout from "react-stripe-checkout";
 // import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
 import calendar from "../photos/LCWCalendar.jpg";
-// import PhotoSelection from "./PhotoSelection";
-// import Calendar from "./Calendar";
 
 const styles = [
   {
@@ -63,12 +61,12 @@ const styles = [
     size: "24x36",
     price: 150.0,
   },
-  // {
-  //   id: 10,
-  //   type: "Calendar",
-  //   size: "8.5x11 (Only for calendars!)",
-  //   price: 25.0,
-  // },
+  {
+    id: 10,
+    type: "Calendar",
+    size: "8.5x11 (Only for calendars!)",
+    price: 25.0,
+  },
 ];
 
 const Purchases = ({ photos }) => {
