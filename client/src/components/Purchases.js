@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Information from "./Information";
-// import StripeCheckout from "react-stripe-checkout";
-import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
+import StripeCheckout from "react-stripe-checkout";
+// import { Elements } from "@stripe/react-stripe-js";
+// import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
 import calendar from "../photos/LCWCalendar.jpg";
 // import PhotoSelection from "./PhotoSelection";
@@ -200,20 +200,19 @@ const Purchases = ({ photos }) => {
               {isNaN(productPrice) ? (
                 <p className="text-white">Please select a photo and a style</p>
               ) : (
-                <div></div>
-                // <StripeCheckout
-                //   stripeKey="pk_test_KYo2T9oUQDIpMwuNYJjCm9x200WhGiUReK"
-                //   token={handleToken}
-                //   billingAddress
-                //   shippingAddress
-                //   amount={productPrice * 100}
-                //   name={productName}
-                // >
-                //   <button type="submit" className="btn btn-success btn-block">
-                //     Purchase for ${productPrice}
-                //     {/* Purchase for <del>${productPrice}</del> ${salePrice} */}
-                //   </button>
-                // </StripeCheckout>
+                <StripeCheckout
+                  stripeKey="pk_test_KYo2T9oUQDIpMwuNYJjCm9x200WhGiUReK"
+                  token={handleToken}
+                  billingAddress
+                  shippingAddress
+                  amount={productPrice * 100}
+                  name={productName}
+                >
+                  <button type="submit" className="btn btn-success btn-block">
+                    Purchase for ${productPrice}
+                    {/* Purchase for <del>${productPrice}</del> ${salePrice} */}
+                  </button>
+                </StripeCheckout>
                 // <StripeCheckout
                 //   stripeKey="pk_live_NfUn28zVGn82Y5WW2exzyyRw00ygY2yGyI"
                 //   token={handleToken}

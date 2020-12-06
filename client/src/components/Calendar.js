@@ -1,4 +1,4 @@
-/*import React from "react";
+import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
 import calendar from "../photos/LCWCalendar.jpg";
@@ -50,7 +50,8 @@ const Calendar = ({ purchasesStyle }) => {
             />
             <p className="card-text">Free shipping to the United States</p>
             <StripeCheckout
-              stripeKey="pk_live_NfUn28zVGn82Y5WW2exzyyRw00ygY2yGyI"
+              // stripeKey="pk_live_NfUn28zVGn82Y5WW2exzyyRw00ygY2yGyI"
+              stripeKey="pk_test_KYo2T9oUQDIpMwuNYJjCm9x200WhGiUReK"
               token={handleToken}
               billingAddress
               shippingAddress
@@ -70,4 +71,3 @@ const Calendar = ({ purchasesStyle }) => {
 };
 
 export default Calendar;
-*/
