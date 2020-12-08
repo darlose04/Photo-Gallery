@@ -75,7 +75,7 @@ const Purchases = ({ photos }) => {
     "https://lcwphotography.herokuapp.com/images/image/CottonCandySunrise.jpg"
   );
   const [productName, setProductName] = useState("");
-  const [productDetails, setProductDetails] = useState("$25.00");
+  const [productDetails, setProductDetails] = useState("");
 
   const purchasesStyle = {
     maxWidth: 1100,
@@ -121,10 +121,30 @@ const Purchases = ({ photos }) => {
   };
 
   let productPrice = parseInt(productDetails.split(",")[2]);
-  console.log(productPrice);
   // let salePrice = productPrice * 0.8;
   let productSize = productDetails.split(",")[0];
   let productType = productDetails.split(",")[1];
+
+  let cartArray = [];
+
+  if (
+    productName !== "" &&
+    productType !== undefined &&
+    productSize !== "" &&
+    productPrice !== NaN
+  ) {
+    let productToPurchase = {
+      name: productName,
+      type: productType,
+      size: productSize,
+      price: productPrice,
+    };
+
+    console.log(productToPurchase);
+    cartArray.push(productToPurchase);
+  }
+
+  console.log(cartArray);
 
   const handleToken = async (token, addresses) => {
     const response = await axios.post(
@@ -149,10 +169,6 @@ const Purchases = ({ photos }) => {
       alert("Something went wrong");
     }
   };
-
-  // const purchaseSelectionChange = (event) => {
-  //   setPurchaseSelection(event.target.innerText);
-  // };
 
   return (
     <div className="container mb-5">
