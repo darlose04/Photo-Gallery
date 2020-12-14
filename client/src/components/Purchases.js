@@ -82,14 +82,6 @@ const Purchases = ({ photos }) => {
     backgroundColor: "rgba(0,0,0,0.8)",
   };
 
-  console.log(photos[photos.length - 1]);
-
-  photos.push({
-    id: "1234567890",
-    name: "Logan Wilson Photography Calendar",
-    src: calendar,
-  });
-
   const photoSelection = () => {
     return photos.map((photo) => (
       <option className="photoName" key={photo.id} value={photo.name}>
