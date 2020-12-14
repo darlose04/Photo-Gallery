@@ -82,7 +82,13 @@ const Purchases = ({ photos }) => {
     backgroundColor: "rgba(0,0,0,0.8)",
   };
 
-  // console.log(photos);
+  console.log(photos[photos.length - 1]);
+
+  photos.push({
+    id: "1234567890",
+    name: "Logan Wilson Photography Calendar",
+    src: calendar,
+  });
 
   const photoSelection = () => {
     return photos.map((photo) => (
@@ -125,26 +131,26 @@ const Purchases = ({ photos }) => {
   let productSize = productDetails.split(",")[0];
   let productType = productDetails.split(",")[1];
 
-  let cartArray = [];
+  // let cartArray = [];
 
-  if (
-    productName !== "" &&
-    productType !== undefined &&
-    productSize !== "" &&
-    productPrice !== NaN
-  ) {
-    let productToPurchase = {
-      name: productName,
-      type: productType,
-      size: productSize,
-      price: productPrice,
-    };
+  // if (
+  //   productName !== "" &&
+  //   productType !== undefined &&
+  //   productSize !== "" &&
+  //   productPrice !== NaN
+  // ) {
+  //   let productToPurchase = {
+  //     name: productName,
+  //     type: productType,
+  //     size: productSize,
+  //     price: productPrice,
+  //   };
 
-    console.log(productToPurchase);
-    cartArray.push(productToPurchase);
-  }
+  //   console.log(productToPurchase);
+  //   cartArray.push(productToPurchase);
+  // }
 
-  console.log(cartArray);
+  // console.log(cartArray);
 
   const handleToken = async (token, addresses) => {
     const response = await axios.post(
