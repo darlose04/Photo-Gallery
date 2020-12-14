@@ -9,6 +9,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import AllPictures from "./components/photopages/AllPictures";
 import Purchases from "./components/Purchases";
+import calendar from "./photos/LCWCalendar.jpg";
 
 const App = () => {
   const [photos, setPhotos] = useState([]);
@@ -36,6 +37,14 @@ const App = () => {
 
       photoArr.unshift(newObj);
     }
+
+    photoArr.push({
+      id: "1234567890",
+      name: "Logan Wilson Photography Calendar",
+      src: calendar,
+      height: 3,
+      width: 4,
+    });
 
     setPhotos(photoArr);
   };
