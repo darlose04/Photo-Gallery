@@ -61,48 +61,9 @@ const About = () => {
               <i className="fas fa-map-marker-alt"></i> Scotts Valley, CA
             </li>
             <li>
-              Bay Photo Lab prints all of my photos onto metal through a process
-              called dye-sublimation. I chose Bay Photo lab because they offer
-              high quality metal prints for a reasonable price.
-            </li>
-          </ul>
-          <ul className="card-text list-unstyled">
-            <li>
-              <h5>
-                <strong>
-                  <a className="text-white" href="https://www.canvaschamp.com/">
-                    Canvas Champ
-                  </a>
-                </strong>
-              </h5>
-            </li>
-            <li>
-              <i className="fas fa-map-marker-alt"></i> Lawrenceville, GA
-            </li>
-            <li>
-              This online canvas printing company prints all of my images onto
-              canvas.
-            </li>
-          </ul>
-          <ul className="card-text list-unstyled">
-            <li>
-              <h5>
-                <strong>
-                  <a
-                    className="text-white"
-                    href="https://www.nationsphotolab.com/"
-                  >
-                    Nations Photo Lab
-                  </a>
-                </strong>
-              </h5>
-            </li>
-            <li>
-              <i className="fas fa-map-marker-alt"></i> Md., United States
-            </li>
-            <li>
-              This professional photo lab prints all of my images onto high
-              quality photo paper.
+              Bay Photo Lab handles all of my printing needs. I chose Bay Photo
+              Lab because they offer high quality prints with excellent
+              craftsmanship at a reasonable price.
             </li>
           </ul>
         </div>
