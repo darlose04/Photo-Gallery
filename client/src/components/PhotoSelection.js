@@ -5,7 +5,7 @@ import axios from "axios";
 const styles = [
   {
     id: 1,
-    type: "Fine Art Print",
+    type: "Photo Print",
     size: "8x10",
     price: 25.0,
   },
@@ -17,7 +17,7 @@ const styles = [
   },
   {
     id: 3,
-    type: "Fine Art Print",
+    type: "Photo Print",
     size: "11x14",
     price: 35.0,
   },
@@ -35,7 +35,7 @@ const styles = [
   },
   {
     id: 6,
-    type: "Fine Art Print",
+    type: "Photo Print",
     size: "16x20",
     price: 60.0,
   },
