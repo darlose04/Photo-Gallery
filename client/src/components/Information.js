@@ -41,7 +41,7 @@ const Information = () => {
           process called dye-sublimation. They come ready to hang with a
           floating frame mounted on the back. All Metal Prints come with square
           corners and have an ultra high gloss surface on white coated aluminum.
-          Please allow 2-3 weeks for processing for Metal Prints.
+          Please allow 1-2 weeks for processing for Metal Prints.
         </p>
         <h3 className="card-title text-white">
           <u>Custom Orders</u>
@@ -62,7 +62,9 @@ const Information = () => {
           <li>
             <strong>Made just for you. Ready to ship in 2-3 weeks.</strong>
           </li>
-          <li>From Morrison, Colorado. Free shipping in the United States.</li>
+          <li>
+            From Westminster, Colorado. Free shipping in the United States.
+          </li>
           <li>
             <strong>Returns and exchanges accepted.</strong> Exceptions may
             apply.
