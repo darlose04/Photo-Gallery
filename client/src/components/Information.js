@@ -14,14 +14,13 @@ const Information = () => {
           <u>Print Information</u>
         </h3>
         <h5 className="card-subtitle mb-1 text-white">
-          <strong>FINE ART PRINTS</strong>
+          <strong>PHOTO PRINTS</strong>
         </h5>
         <p className="card-text mb-4">
-          All Fine Art Prints are printed on Kodak Professional Endura Premier
+          All Photo Prints are printed on Kodak Professional Endura Premier
           photo paper, which means your prints will last well over 100 years.
-          All Fine Art Prints are printed on Luster photo paper and will be
-          signed on the back. Please allow 1-2 weeks for processing for Fine Art
-          Prints.
+          All Photo Prints are printed on Luster photo paper and will be signed
+          on the back. Please allow 1-2 weeks for processing for Photo Prints.
         </p>
         <h5 className="card-subtitle mb-1 text-white">
           <strong>CANVAS PRINTS</strong>
