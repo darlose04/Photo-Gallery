@@ -26,11 +26,12 @@ const Information = () => {
           <strong>CANVAS PRINTS</strong>
         </h5>
         <p className="card-text mb-4">
-          All Canvas Prints are printed on archival-grade canvas that is
-          UV-protected and waterproof. The prints are 0.75" thick with the image
-          mirrored around the edge of the canvas. Canvas Prints come with a
-          sawtooth hanger and will be signed on the back. Please allow for 2-3
-          weeks for processing for Canvas Prints.
+          All Canvas Prints are made with a print on Professional Photo Paper
+          bonded onto museum quality canvas. The print is then wrapped around an
+          artist's stretcher frame and comes ready to hang with a sawtooth
+          hanger. The prints are 1.5" thick with the image mirrored around the
+          edges of the canvas. All Canvas Prints will be signed on the back.
+          Please allow for 1-2 weeks for processing for Canvas Prints.
         </p>
         <h5 className="card-subtitle mb-1 text-white">
           <strong>METAL PRINTS</strong>
