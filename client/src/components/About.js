@@ -24,7 +24,7 @@ const About = () => {
             <div className="card-body">
               <h2 className="card-title card-about">About Logan</h2>
               <p className="card-text about-p">
-                My name is Logan Wilson and I am just a twenty-something trying
+                My name is Logan Wilson and I am just a thirty-something trying
                 to turn my hobby of photography into something more. I have my
                 dad to thank for getting me interested in photography at a young
                 age. Every family vacation, holiday, birthday, and sporting
