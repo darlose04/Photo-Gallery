@@ -134,15 +134,15 @@ const Purchases = ({ photos }) => {
 
   const photoChange = (event) => {
     setProductName(event.target.value);
-    if (event.target.value === "Logan Wilson Photography Calendar") {
-      setSource(calendar);
-    } else {
-      setSource(
-        `https://lcwphotography.herokuapp.com/images/image/${event.target.value
-          .split(" ")
-          .join("")}.jpg`
-      );
-    }
+    // if (event.target.value === "Logan Wilson Photography Calendar") {
+    //   setSource(calendar);
+    // } else {
+    setSource(
+      `https://lcwphotography.herokuapp.com/images/image/${event.target.value
+        .split(" ")
+        .join("")}.jpg`
+    );
+    // }
   };
 
   const styleChange = (event) => {
@@ -208,11 +208,11 @@ const Purchases = ({ photos }) => {
               <h2 className="card-title card-about">
                 Photo Selection & Purchase
               </h2>
-              <div className="alert alert-success">
+              {/* <div className="alert alert-success">
                 A limited number of calendars are available for purchase and can
                 be selected from the Photos dropdown list. Make sure to select
                 the 8.5x11 Calendar option under the Style dropdown.
-              </div>
+              </div> */}
               <p className="card-text">Free shipping to the United States</p>
               <form>
                 <label className="card-text">Photos</label>
